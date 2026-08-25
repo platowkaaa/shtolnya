@@ -1,0 +1,23 @@
+# --- Godot ---
+# Import cache and editor data. Godot regenerates this on open.
+.godot/
+/android/
+
+# --- Exported builds ---
+# Builds are produced from source, never stored in history.
+builds/
+build/
+export/
+*.exe
+*.pck
+*.zip
+
+# --- Blender backups ---
+# Blender writes these next to .blend files automatically.
+*.blend1
+*.blend2
+
+# --- Windows junk ---
+Thumbs.db
+desktop.ini
+*.tmp
