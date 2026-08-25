@@ -1,10 +1,11 @@
-# IDEAS
+# ИДЕИ
 
-Everything that comes to mind but is not in the roadmap goes here.
-Nothing from this file enters the project before v1.0-shipped.
+Всё, что пришло в голову, но не входит в roadmap — сюда.
+Ничего отсюда не попадает в проект раньше v1.0-shipped.
 
-Format: date — idea — why it is tempting — honest cost estimate.
+Формат: дата — идея — чем соблазняет — честная оценка в часах.
 
 ---
 
-2026-08-25 — (example) second lamp type — more light variety — probably a week of work, cut for now.
+2026-08-25 — (пример) второй тип лампы — больше разнообразия света —
+неделя работы, отложено.
