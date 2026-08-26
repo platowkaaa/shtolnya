@@ -8,8 +8,6 @@ height = 1.8
 
 [node name="player" type="CharacterBody3D" unique_id=2098263217 groups=["interactable"]]
 script = ExtResource("1_3vyb7")
-bob_frequency = 3.0
-bob_amplitude = 0.05
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="." unique_id=1744151305]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.9, 0)
