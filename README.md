@@ -28,6 +28,7 @@ The mine was not abandoned because the ore ran out.
 
 ## Structure
 
+- `source/` — working files: .blend, reference boards (not imported by Godot)
 - `scenes/` — Godot scenes
 - `scripts/` — GDScript
 - `shaders/` — .gdshader files

@@ -21,3 +21,7 @@ export/
 Thumbs.db
 desktop.ini
 *.tmp
+
+# --- Source references ---
+# Third-party photos and boards, not ours to publish.
+source/refs/
