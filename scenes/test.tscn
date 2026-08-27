@@ -3,7 +3,12 @@
 [ext_resource type="PackedScene" uid="uid://cf7etl33mhhgl" path="res://scenes/player.tscn" id="1_errlg"]
 [ext_resource type="Script" uid="uid://djplonjaulirc" path="res://scripts/key.gd" id="2_bl13t"]
 
-[sub_resource type="Environment" id="Environment_ij1v8"]
+[sub_resource type="Environment" id="Environment_bl13t"]
+background_mode = 1
+ambient_light_source = 2
+ambient_light_color = Color(0.039215688, 0.05490196, 0.078431375, 1)
+ambient_light_energy = 0.02
+tonemap_mode = 2
 
 [sub_resource type="BoxMesh" id="BoxMesh_errlg"]
 
@@ -15,20 +20,47 @@
 use_collision = true
 size = Vector3(10, 0.1, 10)
 
-[node name="WorldEnvironment" type="WorldEnvironment" parent="." unique_id=1040789860]
-environment = SubResource("Environment_ij1v8")
+[node name="CSGBox3D7" type="CSGBox3D" parent="." unique_id=69117003]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 2.206053, 0)
+use_collision = true
+size = Vector3(10, 0.1, 10)
 
-[node name="DirectionalLight3D" type="DirectionalLight3D" parent="." unique_id=147606984]
-transform = Transform3D(1, 0, 0, 0, 0.6105046, 0.7920127, 0, -0.7920127, 0.6105046, 0, 5.7575483, 5.733893)
+[node name="WorldEnvironment" type="WorldEnvironment" parent="." unique_id=1040789860]
+environment = SubResource("Environment_bl13t")
 
 [node name="player" parent="." unique_id=2098263217 instance=ExtResource("1_errlg")]
 
-[node name="StaticBody3D" type="StaticBody3D" parent="." unique_id=1241602362 groups=["interactable"]]
+[node name="Key" type="StaticBody3D" parent="." unique_id=1241602362 groups=["interactable"]]
 transform = Transform3D(0.6742895, 0, -0.7384671, 0, 1, 0, 0.7384671, 0, 0.6742895, 3.4469173, 1.8888025, 0)
 script = ExtResource("2_bl13t")
 
-[node name="MeshInstance3D" type="MeshInstance3D" parent="StaticBody3D" unique_id=59961846]
+[node name="MeshInstance3D" type="MeshInstance3D" parent="Key" unique_id=59961846]
 mesh = SubResource("BoxMesh_errlg")
 
-[node name="CollisionShape3D" type="CollisionShape3D" parent="StaticBody3D" unique_id=1649363885]
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Key" unique_id=1649363885]
 shape = SubResource("BoxShape3D_bl13t")
+
+[node name="CSGBox3D2" type="CSGBox3D" parent="." unique_id=1067037537]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -4.759657, 1.1349015, 0)
+use_collision = true
+size = Vector3(0.2, 2.2, 10)
+
+[node name="CSGBox3D3" type="CSGBox3D" parent="." unique_id=653456661]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 4.240343, 1.1349015, 0)
+use_collision = true
+size = Vector3(0.2, 2.2, 10)
+
+[node name="CSGBox3D4" type="CSGBox3D" parent="." unique_id=1553619257]
+transform = Transform3D(-4.371139e-08, 0, -1, 0, 1, 0, 1, 0, -4.371139e-08, -0.12721264, 1.1349015, -3.953269)
+use_collision = true
+size = Vector3(0.2, 2.2, 10)
+
+[node name="CSGBox3D5" type="CSGBox3D" parent="." unique_id=1795704393]
+transform = Transform3D(-4.371139e-08, 0, -1, 0, 1, 0, 1, 0, -4.371139e-08, -0.12721264, 1.1349015, 3.046731)
+use_collision = true
+size = Vector3(0.2, 2.2, 10)
+
+[node name="CSGBox3D6" type="CSGBox3D" parent="." unique_id=536936918]
+transform = Transform3D(-1, 0, 8.742278e-08, 0, 1, 0, -8.742278e-08, 0, -1, -2.5423012, 1.1349015, 3.046731)
+use_collision = true
+size = Vector3(0.2, 2.2, 10)
