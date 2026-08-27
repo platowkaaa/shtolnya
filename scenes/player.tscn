@@ -1,12 +1,13 @@
 [gd_scene format=3 uid="uid://cf7etl33mhhgl"]
 
 [ext_resource type="Script" uid="uid://dmf2tmo6rvpeq" path="res://scripts/player.gd" id="1_3vyb7"]
+[ext_resource type="Script" uid="uid://cv3allni0uffa" path="res://scripts/thought_label.gd" id="2_g2els"]
 
 [sub_resource type="CapsuleShape3D" id="CapsuleShape3D_g2els"]
 radius = 0.25
 height = 1.8
 
-[node name="player" type="CharacterBody3D" unique_id=2098263217 groups=["interactable"]]
+[node name="player" type="CharacterBody3D" unique_id=2098263217]
 script = ExtResource("1_3vyb7")
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="." unique_id=1744151305]
@@ -37,15 +38,29 @@ metadata/_edit_use_anchors_ = true
 [node name="PromptLabel" type="Label" parent="CanvasLayer/interact" unique_id=290262496]
 layout_mode = 1
 anchors_preset = -1
-anchor_left = 0.5
-anchor_top = 0.83300006
-anchor_right = 0.5
+anchor_left = 0.026
+anchor_top = 0.90900004
+anchor_right = 0.20300001
 anchor_bottom = 1.0
-offset_left = -20.0
-offset_top = 0.35992432
-offset_right = 20.0
+offset_left = -0.920002
+offset_top = 0.27996826
+offset_right = 0.23999023
 grow_horizontal = 2
 grow_vertical = 0
 theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
-theme_override_font_sizes/font_size = 32
+theme_override_font_sizes/font_size = 45
 horizontal_alignment = 1
+
+[node name="ThoughtLabel" type="Label" parent="CanvasLayer" unique_id=1290233613]
+anchors_preset = -1
+anchor_left = 0.5
+anchor_top = 0.84700006
+anchor_right = 0.5
+anchor_bottom = 1.0
+offset_left = -20.0
+offset_top = 0.2399292
+offset_right = 20.0
+grow_horizontal = 2
+grow_vertical = 0
+theme_override_font_sizes/font_size = 32
+script = ExtResource("2_g2els")

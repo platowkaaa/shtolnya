@@ -38,8 +38,7 @@ func _ready() -> void:
 	head_base_y = head.position.y
 	Input.mouse_mode = Input.MOUSE_MODE_CAPTURED
 	prompt_label.visible = false
- 
- 
+	
  
  
 func is_busy() -> bool:
@@ -81,7 +80,6 @@ func remove_item(item: String) -> void:
 	inventory.erase(item)
  
  
- 
 func _unhandled_input(event: InputEvent) -> void:
 	if event.is_action_pressed("ui_cancel"):
 		if reading:
@@ -102,8 +100,6 @@ func _unhandled_input(event: InputEvent) -> void:
 	if event.is_action_pressed("interact") and is_instance_valid(current_target):
 		current_target.interact(self)
 		return
- 
- 
  
  
 func _process(delta: float) -> void:
@@ -141,7 +137,6 @@ func _get_prompt(obj: Node) -> String:
 	return "осмотреть"
  
  
- 
 func _update_head_bob(delta: float) -> void:
 	var horizontal_speed := Vector2(velocity.x, velocity.z).length()
  
@@ -151,8 +146,6 @@ func _update_head_bob(delta: float) -> void:
 	else:
 		head.position.y = lerp(head.position.y, head_base_y, 1.0 - exp(-delta * 8.0))
 		bob_time = 0.0
- 
- 
  
  
 func _physics_process(delta: float) -> void:
