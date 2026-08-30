@@ -1,6 +1,7 @@
 [gd_scene format=3 uid="uid://cwug40a2266fh"]
 
 [ext_resource type="PackedScene" uid="uid://cf7etl33mhhgl" path="res://scenes/player.tscn" id="1_errlg"]
+[ext_resource type="PackedScene" uid="uid://dun1a53uvlkel" path="res://scenes/wall_lamp.tscn" id="3_74lek"]
 [ext_resource type="PackedScene" uid="uid://d01s47g8n5nsh" path="res://assets/models/mine.glb" id="3_iyx0m"]
 
 [sub_resource type="Environment" id="Environment_bl13t"]
@@ -28,5 +29,33 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1.6944838, 0, 0.60639)
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="mine/Cube/StaticBody3D" unique_id=1709503661]
 shape = SubResource("ConcavePolygonShape3D_bl13t")
+
+[node name="Wall_lamp" parent="." unique_id=672236050 instance=ExtResource("3_74lek")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 12.510946, 1.3463409, 12.152594)
+thought_text = "Керосин ещё не выгорел."
+
+[node name="Wall_lamp2" parent="." unique_id=1312317797 instance=ExtResource("3_74lek")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2.501779, 1.3463409, 4.668268)
+
+[node name="Wall_lamp3" parent="." unique_id=1982689554 instance=ExtResource("3_74lek")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1.3573194, 1.3463409, 11.129213)
+
+[node name="Wall_lamp4" parent="." unique_id=251121699 instance=ExtResource("3_74lek")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -4.6099877, 1.3463409, 3.355886)
+
+[node name="Wall_lamp5" parent="." unique_id=575538065 instance=ExtResource("3_74lek")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.704679, 1.3463409, -6.5074887)
+
+[node name="Wall_lamp6" parent="." unique_id=275955775 instance=ExtResource("3_74lek")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -7.4940314, 1.3463409, -9.111786)
+
+[node name="Wall_lamp7" parent="." unique_id=1285474234 instance=ExtResource("3_74lek")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -2.446198, 1.3463409, -12.166206)
+
+[node name="Wall_lamp8" parent="." unique_id=1953949938 instance=ExtResource("3_74lek")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -11.577311, 1.3463409, -13.805948)
+
+[node name="Wall_lamp9" parent="." unique_id=1858199683 instance=ExtResource("3_74lek")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -17.381107, 1.3463409, -17.503407)
 
 [editable path="mine"]

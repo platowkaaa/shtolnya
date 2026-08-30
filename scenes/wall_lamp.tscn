@@ -1,0 +1,31 @@
+[gd_scene format=3 uid="uid://dun1a53uvlkel"]
+
+[ext_resource type="Script" uid="uid://bmfo4kwt7e5q3" path="res://scripts/wall_lamp.gd" id="1_pglon"]
+[ext_resource type="Script" uid="uid://knb2cp4ii4c4" path="res://scripts/lamp_light.gd" id="2_xsmc4"]
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_0asfw"]
+size = Vector3(0.25, 0.35, 0.2)
+
+[sub_resource type="BoxMesh" id="BoxMesh_7o12q"]
+size = Vector3(0.25, 0.35, 0.2)
+
+[node name="Wall_lamp" type="StaticBody3D" unique_id=672236050 groups=["interactable"]]
+script = ExtResource("1_pglon")
+prompt = "Зажечь"
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="." unique_id=1432089185]
+shape = SubResource("BoxShape3D_0asfw")
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="." unique_id=674683903]
+mesh = SubResource("BoxMesh_7o12q")
+
+[node name="OmniLight3D" type="OmniLight3D" parent="." unique_id=1038217157]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.1, 0.15)
+light_color = Color(1, 0.78039217, 0.5411765, 1)
+light_energy = 1.2
+omni_range = 6.0
+omni_attenuation = 1.5
+script = ExtResource("2_xsmc4")
+base_energy = 0.3
+flicker_strength = 1.0
+flicker_speed = 1.5

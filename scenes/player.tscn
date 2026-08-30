@@ -34,6 +34,8 @@ shadow_enabled = true
 omni_range = 9.0
 omni_attenuation = 2.0
 script = ExtResource("2_qhqgy")
+flicker_strength = 0.4
+flicker_speed = 2.0
 
 [node name="CanvasLayer" type="CanvasLayer" parent="." unique_id=1616116596]
 
