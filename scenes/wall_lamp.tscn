@@ -20,12 +20,12 @@ shape = SubResource("BoxShape3D_0asfw")
 mesh = SubResource("BoxMesh_7o12q")
 
 [node name="OmniLight3D" type="OmniLight3D" parent="." unique_id=1038217157]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.1, 0.15)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.1, 0.35)
 light_color = Color(1, 0.78039217, 0.5411765, 1)
 light_energy = 1.2
-omni_range = 6.0
-omni_attenuation = 1.5
+omni_range = 8.0
+omni_attenuation = 0.7
 script = ExtResource("2_xsmc4")
-base_energy = 0.3
+base_energy = 0.2
 flicker_strength = 1.0
 flicker_speed = 1.5

@@ -1,0 +1,18 @@
+[gd_scene format=3 uid="uid://0l1uixkhn36b"]
+
+[ext_resource type="Script" uid="uid://c1yswn252y5kv" path="res://scripts/switch.gd" id="1_1i7pn"]
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_ew8i5"]
+size = Vector3(0.4, 0.6, 0.2)
+
+[sub_resource type="BoxMesh" id="BoxMesh_1i7pn"]
+size = Vector3(0.4, 0.6, 0.2)
+
+[node name="switch" type="StaticBody3D" unique_id=1248639531 groups=["interactable"]]
+script = ExtResource("1_1i7pn")
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="." unique_id=407558815]
+shape = SubResource("BoxShape3D_ew8i5")
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="." unique_id=1601069156]
+mesh = SubResource("BoxMesh_1i7pn")

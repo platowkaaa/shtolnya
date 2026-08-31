@@ -25,17 +25,15 @@ fov = 70.0
 target_position = Vector3(0, 0, -2.5)
 
 [node name="Lamp" type="Node3D" parent="head" unique_id=1056255662]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.35, -0.3, -0.3)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.3, -0.3, -0.05)
 
 [node name="OmniLight3D" type="OmniLight3D" parent="head/Lamp" unique_id=440838406]
 light_color = Color(1, 0.78039217, 0.5411765, 1)
 light_energy = 1.8
 shadow_enabled = true
-omni_range = 9.0
-omni_attenuation = 2.0
+omni_range = 10.0
+omni_attenuation = 1.5
 script = ExtResource("2_qhqgy")
-flicker_strength = 0.4
-flicker_speed = 2.0
 
 [node name="CanvasLayer" type="CanvasLayer" parent="." unique_id=1616116596]
 
@@ -52,17 +50,18 @@ metadata/_edit_use_anchors_ = true
 [node name="PromptLabel" type="Label" parent="CanvasLayer/interact" unique_id=290262496]
 layout_mode = 1
 anchors_preset = -1
-anchor_left = 0.026
-anchor_top = 0.90900004
-anchor_right = 0.20300001
-anchor_bottom = 1.0
-offset_left = -0.920002
-offset_top = 0.27996826
-offset_right = 0.23999023
+anchor_left = 0.069000006
+anchor_top = 0.87600005
+anchor_right = 0.32200003
+anchor_bottom = 0.96700007
+offset_left = -0.480011
+offset_top = -0.080078125
+offset_right = -145.24005
+offset_bottom = -0.36010742
 grow_horizontal = 2
 grow_vertical = 0
 theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
-theme_override_font_sizes/font_size = 45
+theme_override_font_sizes/font_size = 40
 horizontal_alignment = 1
 
 [node name="ThoughtLabel" type="Label" parent="CanvasLayer" unique_id=1290233613]

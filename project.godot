@@ -18,6 +18,7 @@ config/icon="res://icon.svg"
 [autoload]
 
 Story="*uid://c7aqeohytqgat"
+GameState="*uid://cfvsgsy06q4vw"
 
 [display]
 
