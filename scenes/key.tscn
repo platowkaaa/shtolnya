@@ -1,0 +1,18 @@
+[gd_scene format=3 uid="uid://31l0sl2svu5l"]
+
+[ext_resource type="Script" uid="uid://djplonjaulirc" path="res://scripts/pickup.gd" id="1_yk2u2"]
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_fttkb"]
+
+[sub_resource type="BoxMesh" id="BoxMesh_wy8tx"]
+
+[node name="key" type="StaticBody3D" unique_id=492280366 groups=["interactable"]]
+script = ExtResource("1_yk2u2")
+item_id = "key"
+thought_text = " ura est kluch"
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="." unique_id=667440338]
+shape = SubResource("BoxShape3D_fttkb")
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="." unique_id=977650356]
+mesh = SubResource("BoxMesh_wy8tx")

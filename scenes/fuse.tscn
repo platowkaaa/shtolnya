@@ -1,0 +1,18 @@
+[gd_scene format=3 uid="uid://b8bu33tnjgiq1"]
+
+[ext_resource type="Script" uid="uid://djplonjaulirc" path="res://scripts/pickup.gd" id="1_k3e4o"]
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_legyg"]
+
+[sub_resource type="BoxMesh" id="BoxMesh_k3e4o"]
+
+[node name="fuse" type="StaticBody3D" unique_id=185651309 groups=["interactable"]]
+script = ExtResource("1_k3e4o")
+item_id = "fuse"
+thought_text = " est fuse"
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="." unique_id=1865492433]
+shape = SubResource("BoxShape3D_legyg")
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="." unique_id=1852629562 groups=["interactable"]]
+mesh = SubResource("BoxMesh_k3e4o")

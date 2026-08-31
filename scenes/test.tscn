@@ -4,6 +4,9 @@
 [ext_resource type="PackedScene" uid="uid://dun1a53uvlkel" path="res://scenes/wall_lamp.tscn" id="3_74lek"]
 [ext_resource type="PackedScene" uid="uid://d01s47g8n5nsh" path="res://assets/models/mine.glb" id="3_iyx0m"]
 [ext_resource type="PackedScene" uid="uid://0l1uixkhn36b" path="res://scenes/switch.tscn" id="4_74lek"]
+[ext_resource type="PackedScene" uid="uid://h0ndnby6j1ak" path="res://scenes/gate.tscn" id="5_j5jx5"]
+[ext_resource type="PackedScene" uid="uid://31l0sl2svu5l" path="res://scenes/key.tscn" id="6_lpvoh"]
+[ext_resource type="PackedScene" uid="uid://b8bu33tnjgiq1" path="res://scenes/fuse.tscn" id="7_at5dv"]
 
 [sub_resource type="Environment" id="Environment_bl13t"]
 background_mode = 1
@@ -61,12 +64,22 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -11.577311, 1.3463409, -13.80
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -17.381107, 1.3463409, -17.503407)
 
 [node name="switch" parent="." unique_id=1248639531 instance=ExtResource("4_74lek")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -3.1555665, 0.6495952, -2.7440429)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -3.1555665, 0.94316906, -2.7440429)
+required_item = "fuse"
 
 [node name="switch2" parent="." unique_id=1026494978 instance=ExtResource("4_74lek")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1.8088636, 0.7114266, -2.158987)
 
 [node name="switch3" parent="." unique_id=2048323636 instance=ExtResource("4_74lek")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -2.8415406, 0.57959086, -1.1428447)
+
+[node name="gate" parent="." unique_id=1890582651 instance=ExtResource("5_j5jx5")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -6.5906053, 1.6283684, -5.512415)
+
+[node name="key" parent="." unique_id=492280366 instance=ExtResource("6_lpvoh")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1.1678637, 0.7995523, -5.012515)
+
+[node name="fuse" parent="." unique_id=185651309 instance=ExtResource("7_at5dv")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.18654248, 1.0026942, 1.881281)
 
 [editable path="mine"]

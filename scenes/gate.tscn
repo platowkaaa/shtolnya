@@ -1,0 +1,18 @@
+[gd_scene format=3 uid="uid://h0ndnby6j1ak"]
+
+[ext_resource type="Script" uid="uid://dxbk0c2rkjekp" path="res://scripts/gate.gd" id="1_xfvdi"]
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_ghoj6"]
+size = Vector3(2, 2.2, 0.2)
+
+[sub_resource type="BoxMesh" id="BoxMesh_xfvdi"]
+size = Vector3(2, 2.2, 0.2)
+
+[node name="gate" type="StaticBody3D" unique_id=1890582651 groups=["interactable"]]
+script = ExtResource("1_xfvdi")
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="." unique_id=262158053]
+shape = SubResource("BoxShape3D_ghoj6")
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="." unique_id=516244021]
+mesh = SubResource("BoxMesh_xfvdi")
