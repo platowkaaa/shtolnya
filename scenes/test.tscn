@@ -7,6 +7,7 @@
 [ext_resource type="PackedScene" uid="uid://h0ndnby6j1ak" path="res://scenes/gate.tscn" id="5_j5jx5"]
 [ext_resource type="PackedScene" uid="uid://31l0sl2svu5l" path="res://scenes/key.tscn" id="6_lpvoh"]
 [ext_resource type="PackedScene" uid="uid://b8bu33tnjgiq1" path="res://scenes/fuse.tscn" id="7_at5dv"]
+[ext_resource type="PackedScene" uid="uid://c0nnkru88hslv" path="res://scenes/note.tscn" id="8_jcd4p"]
 
 [sub_resource type="Environment" id="Environment_bl13t"]
 background_mode = 1
@@ -81,5 +82,10 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1.1678637, 0.7995523, -5.012
 
 [node name="fuse" parent="." unique_id=185651309 instance=ExtResource("7_at5dv")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.18654248, 1.0026942, 1.881281)
+
+[node name="note" parent="." unique_id=3738516 instance=ExtResource("8_jcd4p")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -5.5292377, 0.79700315, 0.74862075)
+pages = ["АОЫВДАОЫВДЭАЛЫВ"]
+thought_text = "ЗАПИСОН"
 
 [editable path="mine"]

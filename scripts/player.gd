@@ -13,8 +13,8 @@ extends CharacterBody3D
 # --- Ноды ---
 @onready var head: Node3D = $head
 @onready var ray: RayCast3D = $head/RayCast3D
-@onready var prompt_label: Label = $CanvasLayer/interact/PromptLabel
- 
+@onready var prompt_label: Label = $CanvasLayer/Interact/PromptLabel
+@onready var note_panel: Control = $CanvasLayer/NotePanel
  
 # --- Состояние ---
 var gravity: float = ProjectSettings.get_setting("physics/3d/default_gravity")
@@ -44,12 +44,21 @@ func _ready() -> void:
 func is_busy() -> bool:
 	return reading or paused
  
+
+func read_note(pages: PackedStringArray) -> void:
+	note_panel.show_note(pages)
+	set_reading(true)
+
  
 func set_reading(value: bool) -> void:
 	reading = value
+
+	if not value:
+		note_panel.hide_note()
+
 	_apply_state()
  
- 
+
 func set_paused(value: bool) -> void:
 	paused = value
 	_apply_state()
@@ -87,16 +96,22 @@ func _unhandled_input(event: InputEvent) -> void:
 		else:
 			set_paused(not paused)
 		return
- 
+
+
+	if reading and event.is_action_pressed("interact"):
+		if not note_panel.next_page():
+			set_reading(false)
+		return
+
 	if is_busy():
 		return
- 
+
 	if event is InputEventMouseMotion:
 		rotate_y(-event.relative.x * mouse_sensitivity)
 		head.rotate_x(-event.relative.y * mouse_sensitivity)
 		head.rotation.x = clamp(head.rotation.x, deg_to_rad(-90.0), deg_to_rad(90.0))
 		return
- 
+
 	if event.is_action_pressed("interact") and is_instance_valid(current_target):
 		current_target.interact(self)
 		return

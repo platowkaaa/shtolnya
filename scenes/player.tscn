@@ -3,6 +3,7 @@
 [ext_resource type="Script" uid="uid://dmf2tmo6rvpeq" path="res://scripts/player.gd" id="1_3vyb7"]
 [ext_resource type="Script" uid="uid://cv3allni0uffa" path="res://scripts/thought_label.gd" id="2_g2els"]
 [ext_resource type="Script" uid="uid://knb2cp4ii4c4" path="res://scripts/lamp_light.gd" id="2_qhqgy"]
+[ext_resource type="Script" uid="uid://cfvkmpuxki1rs" path="res://scripts/note_panel.gd" id="4_dqkch"]
 
 [sub_resource type="CapsuleShape3D" id="CapsuleShape3D_g2els"]
 radius = 0.25
@@ -37,7 +38,7 @@ script = ExtResource("2_qhqgy")
 
 [node name="CanvasLayer" type="CanvasLayer" parent="." unique_id=1616116596]
 
-[node name="interact" type="Control" parent="CanvasLayer" unique_id=551753354]
+[node name="Interact" type="Control" parent="CanvasLayer" unique_id=551753354]
 layout_mode = 3
 anchors_preset = 15
 anchor_right = 1.0
@@ -47,7 +48,7 @@ grow_vertical = 2
 mouse_filter = 2
 metadata/_edit_use_anchors_ = true
 
-[node name="PromptLabel" type="Label" parent="CanvasLayer/interact" unique_id=290262496]
+[node name="PromptLabel" type="Label" parent="CanvasLayer/Interact" unique_id=290262496]
 layout_mode = 1
 anchors_preset = -1
 anchor_left = 0.069000006
@@ -77,3 +78,74 @@ grow_horizontal = 2
 grow_vertical = 0
 theme_override_font_sizes/font_size = 32
 script = ExtResource("2_g2els")
+
+[node name="NotePanel" type="Control" parent="CanvasLayer" unique_id=2127193266]
+process_mode = 3
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+mouse_filter = 2
+script = ExtResource("4_dqkch")
+
+[node name="dim" type="ColorRect" parent="CanvasLayer/NotePanel" unique_id=63031331]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+mouse_filter = 2
+color = Color(0, 0, 0, 0.7058824)
+
+[node name="paper" type="ColorRect" parent="CanvasLayer/NotePanel" unique_id=1385502975]
+custom_minimum_size = Vector2(700, 900)
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -20.0
+offset_top = -20.0
+offset_right = 20.0
+offset_bottom = 20.0
+grow_horizontal = 2
+grow_vertical = 2
+color = Color(0.84705883, 0.8, 0.68235296, 0.9019608)
+
+[node name="MarginContainer" type="MarginContainer" parent="CanvasLayer/NotePanel/paper" unique_id=625859514]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_constants/margin_left = 60
+theme_override_constants/margin_top = 60
+theme_override_constants/margin_right = 60
+theme_override_constants/margin_bottom = 60
+
+[node name="NoteText" type="Label" parent="CanvasLayer/NotePanel/paper/MarginContainer" unique_id=957182790]
+layout_mode = 2
+theme_override_colors/font_color = Color(0.16470589, 0.12156863, 0.078431375, 1)
+theme_override_font_sizes/font_size = 28
+autowrap_mode = 2
+
+[node name="Hint" type="Label" parent="CanvasLayer/NotePanel" unique_id=2098362552]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.40500003
+anchor_top = 0.92
+anchor_right = 0.572
+anchor_bottom = 0.989
+offset_left = 83.39996
+offset_top = 20.399963
+offset_right = -39.23999
+offset_bottom = 11.880005
+grow_horizontal = 2
+grow_vertical = 0
+theme_override_font_sizes/font_size = 24
+text = "[E] дальше    [Esc] убрать"
