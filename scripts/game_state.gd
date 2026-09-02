@@ -1,7 +1,7 @@
 extends Node
 
 
-signal switch_thrown(count: int)
+signal switch_thrown(count: int) #сигнал ждёт счётчика 0/3 на экране
 signal power_restored
 const TOTAL_SWITCHES: int = 3
 
@@ -16,3 +16,8 @@ func throw_switch() -> void:
 	if switches_on >= TOTAL_SWITCHES and not power_on:
 		power_on = true
 		power_restored.emit()
+
+#зовётся перед перезагрузкой сцены; кнопка «начать заново»
+func reset() -> void: 
+	switches_on = 0
+	power_on = false

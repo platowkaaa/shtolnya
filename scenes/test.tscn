@@ -86,6 +86,5 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.18654248, 1.0026942, 1.881
 [node name="note" parent="." unique_id=3738516 instance=ExtResource("8_jcd4p")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -5.5292377, 0.79700315, 0.74862075)
 pages = ["АОЫВДАОЫВДЭАЛЫВ"]
-thought_text = "ЗАПИСОН"
 
 [editable path="mine"]
