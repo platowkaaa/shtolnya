@@ -86,8 +86,8 @@ deep ends. All alone. None found.
 The Cap'n enters them as "left the mine without notice", and the
 Adventurers read that in London and are satisfied.
 
-Tregear took the key of the shaft gate when he went. The Cap'n was three
-days about the key. He has not once been about Tregear.
+Tregear took the key to the lower workings when he went. The Cap'n was
+three days about the key. He has not once been about Tregear.
 
 I am to report on the lode, and I shall report on the lode. But I go
 down to the 70 tomorrow, and if the water is too high I shall find
