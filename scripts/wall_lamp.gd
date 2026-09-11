@@ -25,5 +25,4 @@ func interact(_player: Node) -> void:
 		Story.say(thought_text)
 
 func _on_power_restored() -> void:
-	is_lit = false
 	light.visible = false
