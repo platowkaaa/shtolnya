@@ -31,8 +31,8 @@ data = PackedVector3Array(-0.8609, 0.2617, -0.27609998, -0.8096, 0.26139998, -0.
 environment = SubResource("Environment_bl13t")
 
 [node name="player" parent="." unique_id=2098263217 instance=ExtResource("1_errlg")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 12.22919, 0.5514288, 12.52655)
-speed = 6.0
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 14.082314, 0.68237495, 11.991774)
+speed = 5.0
 
 [node name="Wall_lamp" parent="." unique_id=672236050 instance=ExtResource("3_74lek")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 12.510946, 1.3463409, 12.152594)

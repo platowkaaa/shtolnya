@@ -15,14 +15,16 @@ extends CharacterBody3D
 @onready var ray: RayCast3D = $head/RayCast3D
 @onready var prompt_label: Label = $CanvasLayer/Interact/PromptLabel
 @onready var note_panel: Control = $CanvasLayer/NotePanel
- 
+@onready var blackout: ColorRect = $CanvasLayer/Blackout 
+
 # --- Состояние ---
 var gravity: float = ProjectSettings.get_setting("physics/3d/default_gravity")
 var inventory: Array[String] = []
  
 var reading: bool = false
 var paused: bool = false
- 
+var game_over: bool = false # Игрок не успел. Из этого состояния выхода нет — только перезапуск.
+
  
 var current_target: Node = null
  
@@ -38,11 +40,16 @@ func _ready() -> void:
 	head_base_y = head.position.y
 	Input.mouse_mode = Input.MOUSE_MODE_CAPTURED
 	prompt_label.visible = false
-	
- 
- 
+	blackout.visible = false
+	GameState.time_is_up.connect(_on_time_is_up) 
+
+func _on_time_is_up() -> void:
+	game_over = true
+	blackout.visible = true
+	_apply_state() 
+
 func is_busy() -> bool:
-	return reading or paused
+	return reading or paused or game_over
  
 
 func read_note(pages: PackedStringArray) -> void:
@@ -91,6 +98,9 @@ func remove_item(item: String) -> void:
  
 func _unhandled_input(event: InputEvent) -> void:
 	if event.is_action_pressed("ui_cancel"):
+		if game_over:
+			return
+
 		if reading:
 			set_reading(false)
 		else:

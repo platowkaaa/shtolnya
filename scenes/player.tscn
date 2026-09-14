@@ -150,3 +150,13 @@ grow_horizontal = 2
 grow_vertical = 0
 theme_override_font_sizes/font_size = 24
 text = "[E] дальше    [Esc] убрать"
+
+[node name="Blackout" type="ColorRect" parent="CanvasLayer" unique_id=2001715533]
+process_mode = 3
+visible = false
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+mouse_filter = 2
