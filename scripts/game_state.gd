@@ -5,7 +5,7 @@ signal switch_thrown(count: int) #сигнал ждёт счётчика 0/3 н�
 signal power_restored
 signal time_is_up
 const TOTAL_SWITCHES: int = 3
-const ESCAPE_TIME: float = 50.0
+const ESCAPE_TIME: float = 10.0
 var time_left: float 
 var escape_running: bool = false
 

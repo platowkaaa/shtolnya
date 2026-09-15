@@ -8,11 +8,15 @@ extends CharacterBody3D
 # --- Покачивание головы при ходьбе ---
 @export var bob_frequency: float = 2.0
 @export var bob_amplitude: float = 0.04
- 
+
+# --- Дрожь камеры при побеге ---
+@export var shake_amplitude: float = 0.035   
+@export var shake_speed: float = 8.0
  
 # --- Ноды ---
 @onready var head: Node3D = $head
 @onready var ray: RayCast3D = $head/RayCast3D
+@onready var camera: Camera3D = $head/Camera3D
 @onready var prompt_label: Label = $CanvasLayer/Interact/PromptLabel
 @onready var note_panel: Control = $CanvasLayer/NotePanel
 @onready var blackout: ColorRect = $CanvasLayer/Blackout 
@@ -32,6 +36,8 @@ var current_target: Node = null
 var head_base_y: float = 0.0
 var bob_time: float = 0.0
  
+var shake_time: float = 0.0
+var shake_noise:= FastNoiseLite.new()
  
 func _ready() -> void:
  
@@ -43,9 +49,36 @@ func _ready() -> void:
 	blackout.visible = false
 	GameState.time_is_up.connect(_on_time_is_up) 
 
+
+	shake_noise.noise_type = FastNoiseLite.TYPE_PERLIN
+	shake_noise.frequency = 1.0
+	shake_noise.seed = randi()
+
+
+func _update_camera_shake(delta: float) -> void:
+	if not GameState.escape_running:
+		var back := 1.0 - exp(-delta * 8.0)
+		camera.rotation.x = lerp(camera.rotation.x, 0.0, back)
+		camera.rotation.y = lerp(camera.rotation.y, 0.0, back)
+		return
+
+	shake_time += delta * shake_speed
+
+
+	var left_ratio := GameState.time_left / GameState.ESCAPE_TIME
+
+
+	var strength := (1.0 - left_ratio) * shake_amplitude
+
+
+	camera.rotation.x = shake_noise.get_noise_1d(shake_time) * strength
+	camera.rotation.y = shake_noise.get_noise_1d(shake_time + 500.0) * strength
+
+
 func _on_time_is_up() -> void:
 	game_over = true
 	blackout.visible = true
+	camera.rotation = Vector3.ZERO
 	_apply_state() 
 
 func is_busy() -> bool:
@@ -130,9 +163,10 @@ func _unhandled_input(event: InputEvent) -> void:
 func _process(delta: float) -> void:
 	if is_busy():
 		return
- 
+
 	_update_target()
 	_update_head_bob(delta)
+	_update_camera_shake(delta)
  
  
 func _update_target() -> void:
