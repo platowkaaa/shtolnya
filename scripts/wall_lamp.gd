@@ -9,7 +9,7 @@ var is_lit: bool = false
 
 func _ready() -> void:
 	light.visible = false
-	GameState.power_restored.connect(_on_power_restored)
+	GameState.blackout.connect(_on_blackout)
 
 
 func interact(_player: Node) -> void:
@@ -24,5 +24,5 @@ func interact(_player: Node) -> void:
 	if thought_text != "":
 		Story.say(thought_text)
 
-func _on_power_restored() -> void:
+func _on_blackout() -> void:
 	light.visible = false

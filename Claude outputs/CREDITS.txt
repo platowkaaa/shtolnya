@@ -1,0 +1,183 @@
+CREDITS — «Штольня» (Shtolnya)
+==============================
+
+Все ассеты ниже проверены по странице каждого ассета 2026-09-18.
+CC0-ассеты формально не требуют указания авторства; список приведён
+добровольно, из уважения к авторам. Формат строки:
+Название — Автор — Источник (URL) — Лицензия
+
+
+=====================================================================
+TEXTURES (CC0)
+=====================================================================
+
+--- Poly Haven (polyhaven.com) — «CC0 License» ---
+Dark Rock — Amal Kumar — Poly Haven (https://polyhaven.com/a/dark_rock) — CC0
+Dark Rock 02 — Amal Kumar — Poly Haven (https://polyhaven.com/a/dark_rock_02) — CC0
+Quarry Wall — Dimitrios Savva — Poly Haven (https://polyhaven.com/a/quarry_wall) — CC0
+Quarry Wall 02 — Dimitrios Savva — Poly Haven (https://polyhaven.com/a/quarry_wall_02) — CC0
+Rock Wall 10 — Amal Kumar — Poly Haven (https://polyhaven.com/a/rock_wall_10) — CC0
+Rock Face 03 — Dario Barresi (photography), Rico Cilliers (processing) — Poly Haven (https://polyhaven.com/a/rock_face_03) — CC0
+Rock 06 — Rob Tuytel — Poly Haven (https://polyhaven.com/a/rock_06) — CC0
+Rock Wall 08 — Amal Kumar — Poly Haven (https://polyhaven.com/a/rock_wall_08) — CC0
+Rock Wall 14 — Dimitrios Savva — Poly Haven (https://polyhaven.com/a/rock_wall_14) — CC0
+Aerial Rocks 02 — Rob Tuytel — Poly Haven (https://polyhaven.com/a/aerial_rocks_02) — CC0
+Rock Wall 02 — Rob Tuytel — Poly Haven (https://polyhaven.com/a/rock_wall_02) — CC0
+Rock Boulder Cracked — Dimitrios Savva (photography), Dario Barresi (processing) — Poly Haven (https://polyhaven.com/a/rock_boulder_cracked) — CC0
+Coast Land Rocks 01 — Rob Tuytel (photography, processing), Rico Cilliers (tiling) — Poly Haven (https://polyhaven.com/a/coast_land_rocks_01) — CC0
+Rough Wood — Rob Tuytel — Poly Haven (https://polyhaven.com/a/rough_wood) — CC0
+Beam Wall 01 — Rob Tuytel — Poly Haven (https://polyhaven.com/a/beam_wall_01) — CC0
+Raw Plank Wall — Dimitrios Savva — Poly Haven (https://polyhaven.com/a/raw_plank_wall) — CC0
+Old Planks 02 — Rob Tuytel — Poly Haven (https://polyhaven.com/a/old_planks_02) — CC0
+Dark Planks — Rob Tuytel — Poly Haven (https://polyhaven.com/a/dark_planks) — CC0
+Medieval Wood — Rob Tuytel — Poly Haven (https://polyhaven.com/a/medieval_wood) — CC0
+Rust Coarse 01 — Dimitrios Savva (photography), Rico Cilliers (processing) — Poly Haven (https://polyhaven.com/a/rust_coarse_01) — CC0
+Rusty Metal 03 — Amal Kumar — Poly Haven (https://polyhaven.com/a/rusty_metal_03) — CC0
+Rusty Metal 04 — Amal Kumar — Poly Haven (https://polyhaven.com/a/rusty_metal_04) — CC0
+Rusty Metal Sheet — Amal Kumar — Poly Haven (https://polyhaven.com/a/rusty_metal_sheet) — CC0
+Metal Plate 02 — Rob Tuytel — Poly Haven (https://polyhaven.com/a/metal_plate_02) — CC0
+Metal Plate — Rob Tuytel — Poly Haven (https://polyhaven.com/a/metal_plate) — CC0
+Metal Grate Rusty — Dimitrios Savva (photography), Rob Tuytel (processing) — Poly Haven (https://polyhaven.com/a/metal_grate_rusty) — CC0
+Rusty Corrugated Iron — Charlotte Baglioni — Poly Haven (https://polyhaven.com/a/rusty_corrugated_iron) — CC0
+Burned Ground 01 — Rob Tuytel — Poly Haven (https://polyhaven.com/a/burned_ground_01) — CC0
+Gravel Road — Amal Kumar — Poly Haven (https://polyhaven.com/a/gravel_road) — CC0
+Ground Grey — Rob Tuytel — Poly Haven (https://polyhaven.com/a/ground_grey) — CC0
+Rock Ground — Rob Tuytel — Poly Haven (https://polyhaven.com/a/rock_ground) — CC0
+Hessian 230 — colormass (photography), Rico Cilliers (processing) — Poly Haven (https://polyhaven.com/a/hessian_230) — CC0
+Brown Leather — Rob Tuytel — Poly Haven (https://polyhaven.com/a/brown_leather) — CC0
+
+--- cgbookcase (cgbookcase.com) — «CC0 1.0» ---
+Rock Face 01 — Dorian Zgraggen / cgbookcase — cgbookcase (https://www.cgbookcase.com/textures/rock-face-01) — CC0 1.0
+Grey Rock 01 — Dorian Zgraggen / cgbookcase — cgbookcase (https://www.cgbookcase.com/textures/grey-rock-01) — CC0 1.0
+Seaside Rocks 01 — Dorian Zgraggen / cgbookcase — cgbookcase (https://www.cgbookcase.com/textures/seaside-rocks-01) — CC0 1.0
+Wooden Planks 05 — Dorian Zgraggen / cgbookcase — cgbookcase (https://www.cgbookcase.com/textures/wooden-planks-05) — CC0 1.0
+Old Iron 01 — Dorian Zgraggen / cgbookcase — cgbookcase (https://www.cgbookcase.com/textures/old-iron-01) — CC0 1.0
+Rusty Metal Panel 01 — Dorian Zgraggen / cgbookcase — cgbookcase (https://www.cgbookcase.com/textures/rusty-metal-panel-01) — CC0 1.0
+Battered Metal 01 — Dorian Zgraggen / cgbookcase — cgbookcase (https://www.cgbookcase.com/textures/battered-metal-01) — CC0 1.0
+Gravel 01 — Dorian Zgraggen / cgbookcase — cgbookcase (https://www.cgbookcase.com/textures/gravel-01) — CC0 1.0
+
+--- 3D TEXTURES (3dtextures.me) — «All textures on this site are licensed as CC0» ---
+Ground Wet Rocks 001 — Eren Katsukagi — 3dtextures.me (https://3dtextures.me/2020/08/07/ground-wet-rocks-001/) — CC0
+Ground Wet 003 — Eren Katsukagi — 3dtextures.me (https://3dtextures.me/2020/06/01/ground-wet-003/) — CC0
+Ground Wet Pebbles 001 — Eren Katsukagi — 3dtextures.me (https://3dtextures.me/2020/05/11/ground-wet-pebbles-001/) — CC0
+Old Wood 002 — Eren Katsukagi — 3dtextures.me (https://3dtextures.me/2021/04/28/old-wood-002/) — CC0
+Water 001 — Eren Katsukagi — 3dtextures.me (https://3dtextures.me/2017/12/28/water-001/) — CC0
+Water 002 — Eren Katsukagi — 3dtextures.me (https://3dtextures.me/2018/11/29/water-002/) — CC0
+Paper Wrinkled 001 — Eren Katsukagi — 3dtextures.me (https://3dtextures.me/2021/03/22/paper-wrinkled-001/) — CC0
+Paper Recycled 001 — Eren Katsukagi — 3dtextures.me (https://3dtextures.me/2019/01/07/paper-recycled-001/) — CC0
+
+--- Kenney (kenney.nl) — «Creative Commons CC0» ---
+Retro Textures Fantasy — Kenney — Kenney (https://kenney.nl/assets/retro-textures-fantasy) — CC0
+
+
+=====================================================================
+SOUNDS (CC0)
+=====================================================================
+
+--- Freesound (freesound.org) — «Creative Commons 0» ---
+Cave Ambience Loop — hushless — Freesound (https://freesound.org/s/770379/) — CC0
+Ambiance_Atmosphere_Cave_Loop_Stereo.ogg — Nox_Sound — Freesound (https://freesound.org/s/553080/) — CC0
+ambience cave5.ogg — fonografico — Freesound (https://freesound.org/s/636110/) — CC0
+Dark ambient drone sound — martinbeltov — Freesound (https://freesound.org/s/244196/) — CC0
+Low Rumble - loopable ambiance — lennartgreen — Freesound (https://freesound.org/s/638914/) — CC0
+Low Frequency Vibrating Drone with Heart Pressure Rumbles and Booms — bassimat — Freesound (https://freesound.org/s/860781/) — CC0
+Wind whooshing through vent — giddster — Freesound (https://freesound.org/s/719561/) — CC0
+Wind Tunnel — Electroviolence — Freesound (https://freesound.org/s/234537/) — CC0
+Artificial Cave Impulse Response — Fission9 — Freesound (https://freesound.org/s/455295/) — CC0
+0.70s Underpass Tunnel Combo IR (Impulse Response) — djericmark — Freesound (https://freesound.org/s/724866/) — CC0
+Cave Water Droplet 1.WAV — Selulance — Freesound (https://freesound.org/s/395258/) — CC0
+37 - 2 Water drop - stone.WAV — 14FPanska_Nemec_Petr — Freesound (https://freesound.org/s/420227/) — CC0
+water drops in cave.wav — banasz — Freesound (https://freesound.org/s/583804/) — CC0
+Water Dripping in Cave.wav — Sclolex — Freesound (https://freesound.org/s/177958/) — CC0
+deep water footsteps.wav — bruno.auzet — Freesound (https://freesound.org/s/553863/) — CC0
+footsteps in a water puddle — launemax — Freesound (https://freesound.org/s/249911/) — CC0
+FOLEY_Footsteps_Wet_Gravel_001.wav — conleec — Freesound (https://freesound.org/s/149245/) — CC0
+Water Puddle Splash — cookies+policy — Freesound (https://freesound.org/s/563021/) — CC0
+Footsteps - Stone, Rock, Concrete, Cement — SecureSubset — Freesound (https://freesound.org/s/813622/) — CC0
+Hiking Boot Footsteps on Stone — Fission9 — Freesound (https://freesound.org/s/521590/) — CC0
+Footstep on Stone — sgossner — Freesound (https://freesound.org/s/197778/) — CC0
+Hiking Boot Footsteps on Wooden Planks — Fission9 — Freesound (https://freesound.org/s/521589/) — CC0
+Creaking Wood 4 Steps — Rudmer_Rotteveel — Freesound (https://freesound.org/s/502507/) — CC0
+Footsteps Dirt Gravel — PotatokingXII — Freesound (https://freesound.org/s/352870/) — CC0
+Footsteps in Gravel — petebuchwald — Freesound (https://freesound.org/s/273354/) — CC0
+FOLEY_Footsteps_Metal_001.wav — conleec — Freesound (https://freesound.org/s/148462/) — CC0
+footsteps boots metal 2.wav — alec_mackay — Freesound (https://freesound.org/s/463666/) — CC0
+Metal Grate Running — Oilcan03 — Freesound (https://freesound.org/s/786977/) — CC0
+R28-03-Large Wood Ship Creaking.wav — craigsmith — Freesound (https://freesound.org/s/483355/) — CC0
+Wood Creak Single V5 — Rudmer_Rotteveel — Freesound (https://freesound.org/s/506660/) — CC0
+Creaking Wood 1.wav — Greg_Surr — Freesound (https://freesound.org/s/590150/) — CC0
+R29-04-Crashing Collapse of Wood Building.wav — craigsmith — Freesound (https://freesound.org/s/487142/) — CC0
+Bricks/Stones/Rocks/Gravel Falling — iwanPlays — Freesound (https://freesound.org/s/567249/) — CC0
+Heavy metal light switch, flipping.wav — SpliceSound — Freesound (https://freesound.org/s/188194/) — CC0
+Kill Switch (Large Breaker Switch) .WAV — EchoCinematics — Freesound (https://freesound.org/s/131599/) — CC0
+lever.wav — Mihacappy — Freesound (https://freesound.org/s/828131/) — CC0
+Epic Metal Gate.flac — qubodup — Freesound (https://freesound.org/s/184935/) — CC0
+metal gate - rattle handle, swing, clang.wav — Widds — Freesound (https://freesound.org/s/330522/) — CC0
+door metal big heavy close kinda slam thud echo offmic.wav — kyles — Freesound (https://freesound.org/s/406197/) — CC0
+Metallic Groan — hinchinbrook — Freesound (https://freesound.org/s/496836/) — CC0
+metal-gate-slam — newagesoup — Freesound (https://freesound.org/s/335976/) — CC0
+Chains.wav — agaudiodesigns — Freesound (https://freesound.org/s/500558/) — CC0
+Hand-crank Generator (slow) — epichero — Freesound (https://freesound.org/s/155390/) — CC0
+Rope under tension.WAV — gear_clinkz — Freesound (https://freesound.org/s/547862/) — CC0
+Squeaky Wheels.wav — Shamewap — Freesound (https://freesound.org/s/389687/) — CC0
+Candle wood wick flame mono 01.wav — roisin.gleeson — Freesound (https://freesound.org/s/680476/) — CC0
+torch ambience loop — LordStirling — Freesound (https://freesound.org/s/483692/) — CC0
+fire crackling loop.wav — soundofsong — Freesound (https://freesound.org/s/650574/) — CC0
+fire-crackling.wav — jmehlferber — Freesound (https://freesound.org/s/370938/) — CC0
+Match strike — Bertsz — Freesound (https://freesound.org/s/524306/) — CC0
+Match Sizzle 03 — squareal — Freesound (https://freesound.org/s/237406/) — CC0
+Gathering Stone Resources.flac — qubodup — Freesound (https://freesound.org/s/184383/) — CC0
+Single Rock hit Dirt.wav — worthahep88 — Freesound (https://freesound.org/s/319222/) — CC0
+Dramatic Hit — qubodup — Freesound (https://freesound.org/s/222517/) — CC0
+Heavy Breathing Man/Boy.WAV — darranambler — Freesound (https://freesound.org/s/321669/) — CC0
+slow deep breath and sharp intake of breath (breathing).wav — Tac_333 — Freesound (https://freesound.org/s/511256/) — CC0
+Creepy_Breathing.wav — georgisound — Freesound (https://freesound.org/s/369294/) — CC0
+Paper Unfolding Quickly — coolernow123 — Freesound (https://freesound.org/s/547980/) — CC0
+Rustling Paper — samarobryn — Freesound (https://freesound.org/s/503033/) — CC0
+Paper Rustling 01.wav — swidmark — Freesound (https://freesound.org/s/171320/) — CC0
+Foley pick up gun on wood 02.wav — martian — Freesound (https://freesound.org/s/19289/) — CC0
+
+--- OpenGameArt (opengameart.org) — «CC0» ---
+Loopable Dungeon Ambience — JaggedStone — OpenGameArt (https://opengameart.org/content/loopable-dungeon-ambience) — CC0
+4 Atmospheric ghostly loops — Independent.nu (submitted by qubodup) — OpenGameArt (https://opengameart.org/content/4-atmospheric-ghostly-loops) — CC0
+Dripping water loop — Independent.nu (submitted by qubodup) — OpenGameArt (https://opengameart.org/content/dripping-water-loop) — CC0
+Fantozzi's Footsteps (Grass/Sand & Stone) — Fantozzi (submitted by qubodup) — OpenGameArt (https://opengameart.org/content/fantozzis-footsteps-grasssand-stone) — CC0
+42 Snow and Gravel Footsteps — Corsica_S (extracted by Iwan Gabovitch, submitted by qubodup) — OpenGameArt (https://opengameart.org/content/42-snow-and-gravel-footsteps) — CC0
+Horror Hit Soundpack 1 — psychhead_ — OpenGameArt (https://opengameart.org/content/horror-hit-soundpack-1) — CC0
+Cave In — StarNinjas — OpenGameArt (https://opengameart.org/content/cave-in) — CC0
+old elevator door — sinny — OpenGameArt (https://opengameart.org/content/old-elevator-door) — CC0
+
+--- Kenney (kenney.nl) — «Creative Commons CC0» ---
+RPG Audio — Kenney — Kenney (https://kenney.nl/assets/rpg-audio) — CC0
+Impact Sounds — Kenney — Kenney (https://kenney.nl/assets/impact-sounds) — CC0
+UI Audio — Kenney — Kenney (https://kenney.nl/assets/ui-audio) — CC0
+
+
+=====================================================================
+NON-CC0 ASSETS — ЛИЦЕНЗИЯ ОТЛИЧАЕТСЯ ОТ CC0
+=====================================================================
+
+--- Pixabay — «Free for use under the Pixabay Content License» ---
+(Pixabay Content License: бесплатно, коммерческое использование разрешено,
+атрибуция не требуется; ЗАПРЕЩЕНО распространять или продавать файлы
+«as standalone» — только внутри готовой игры/проекта.
+Полный текст: https://pixabay.com/service/license-summary/)
+
+Old Mine Ambience — JoelFazhari — Pixabay (https://pixabay.com/sound-effects/film-special-effects-old-mine-ambience-200677/) — Pixabay Content License
+Cavewind Ambience — Alex_Jauk — Pixabay (https://pixabay.com/sound-effects/nature-cavewind-ambience-271124/) — Pixabay Content License
+Underground Waterflow Ambience 2 — Alex_Jauk — Pixabay (https://pixabay.com/sound-effects/nature-underground-waterflow-ambience-2-201613/) — Pixabay Content License
+minecart — wmquincy101 (via freesound_community) — Pixabay (https://pixabay.com/sound-effects/film-special-effects-minecart-72127/) — Pixabay Content License
+002549_Dangerous mine shaft.mp3 — Freesound Community — Pixabay (https://pixabay.com/sound-effects/film-special-effects-002549-dangerous-mine-shaftmp3-52820/) — Pixabay Content License
+Steel Cage Opening — BuddyGuyTrask (via freesound_community) — Pixabay (https://pixabay.com/sound-effects/film-special-effects-steel-cage-opening-83440/) — Pixabay Content License
+Freight Elevator — zaphod1984 (via freesound_community) — Pixabay (https://pixabay.com/sound-effects/film-special-effects-freight-elevator-33694/) — Pixabay Content License
+Large Lever Pushed & Pulled | Moving the Lever — Lesiakower — Pixabay (https://pixabay.com/sound-effects/film-special-effects-large-lever-pushed-amp-pulled-moving-the-lever-386435/) — Pixabay Content License
+Poltergeist Knocking — Alex_Jauk — Pixabay (https://pixabay.com/sound-effects/horror-poltergeist-knocking-227003/) — Pixabay Content License
+Knocking Knock Big Reverb — deleted_user_7146007 (via freesound_community) — Pixabay (https://pixabay.com/sound-effects/film-special-effects-knocking-knock-big-reverb-101984/) — Pixabay Content License
+Mining with Pick Axe in a group — MiraclesHappen (via freesound_community) — Pixabay (https://pixabay.com/sound-effects/film-special-effects-mining-with-pick-axe-in-a-group-29590/) — Pixabay Content License
+
+--- Sonniss GDC Game Audio Bundle — собственная royalty-free лицензия ---
+(https://sonniss.com/gameaudiogdc — «royalty free and commercially usable»,
+«No attribution is required», нельзя распространять как отдельные файлы или
+в составе звуковых библиотек; «AI/ML training is strictly prohibited».)
+Если из бандла взяты файлы — перечислить здесь по образцу:
+<имя файла> — <библиотека/автор из архива> — Sonniss GDC <год> (https://sonniss.com/gameaudiogdc) — Sonniss royalty-free license
