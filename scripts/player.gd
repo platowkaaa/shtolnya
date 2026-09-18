@@ -20,6 +20,7 @@ extends CharacterBody3D
 @onready var prompt_label: Label = $CanvasLayer/Interact/PromptLabel
 @onready var note_panel: Control = $CanvasLayer/NotePanel
 @onready var blackout: ColorRect = $CanvasLayer/Blackout 
+@export var enemy_lamp: Node3D
 
 # --- Состояние ---
 var gravity: float = ProjectSettings.get_setting("physics/3d/default_gravity")
@@ -28,7 +29,7 @@ var inventory: Array[String] = []
 var reading: bool = false
 var paused: bool = false
 var game_over: bool = false # Игрок не успел. Из этого состояния выхода нет — только перезапуск.
-
+var in_cutscene: bool = false
  
 var current_target: Node = null
  
@@ -48,11 +49,44 @@ func _ready() -> void:
 	prompt_label.visible = false
 	blackout.visible = false
 	GameState.time_is_up.connect(_on_time_is_up) 
-
+	GameState.power_restored.connect(_play_finale_cutscene)
 
 	shake_noise.noise_type = FastNoiseLite.TYPE_PERLIN
 	shake_noise.frequency = 1.0
 	shake_noise.seed = randi()
+
+
+func _play_finale_cutscene() -> void:
+	in_cutscene = true
+	_apply_state()
+	enemy_lamp.visible = true
+
+	var dir := enemy_lamp.global_position - global_position
+	var desired_y := atan2(-dir.x, -dir.z)
+	var target_y := rotation.y + wrapf(desired_y - rotation.y, -PI, PI)
+	var turn := create_tween()
+	turn.set_parallel(true)
+	turn.tween_property(self, "rotation:y", target_y, 2.0).set_trans(Tween.TRANS_SINE)
+	turn.tween_property(head, "rotation:x", 0.0, 2.0).set_trans(Tween.TRANS_SINE)
+	await turn.finished
+
+	await get_tree().create_timer(2.0).timeout
+
+	enemy_lamp.visible = false
+
+	var jolt := create_tween()
+	jolt.tween_property(camera, "rotation:x", deg_to_rad(8.0), 0.05)
+	jolt.tween_property(camera, "rotation:x", 0.0, 0.25)
+	await jolt.finished
+
+	await get_tree().create_timer(0.3).timeout
+
+	# Лампы гасит не рубильник, а то, что пришло.
+	GameState.blackout.emit()
+
+	in_cutscene = false
+	_apply_state()
+	GameState.start_escape()
 
 
 func _update_camera_shake(delta: float) -> void:
@@ -82,7 +116,7 @@ func _on_time_is_up() -> void:
 	_apply_state() 
 
 func is_busy() -> bool:
-	return reading or paused or game_over
+	return reading or paused or game_over or in_cutscene
  
 
 func read_note(pages: PackedStringArray) -> void:
@@ -105,15 +139,15 @@ func set_paused(value: bool) -> void:
  
  
 func _apply_state() -> void:
-	var busy := is_busy()
- 
-	get_tree().paused = busy
- 
-	if busy:
-		prompt_label.visible = false
+	var world_stopped: bool = reading or paused or game_over
+	get_tree().paused = world_stopped
+	if world_stopped:
 		Input.mouse_mode = Input.MOUSE_MODE_VISIBLE
 	else:
 		Input.mouse_mode = Input.MOUSE_MODE_CAPTURED
+		
+	if is_busy():
+		prompt_label.visible = false
  
  
 func add_item(item: String) -> void:

@@ -33,9 +33,10 @@ size = Vector3(0.25, 0.35, 0.2)
 [node name="WorldEnvironment" type="WorldEnvironment" parent="." unique_id=1040789860]
 environment = SubResource("Environment_bl13t")
 
-[node name="player" parent="." unique_id=2098263217 instance=ExtResource("1_errlg")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -31.299582, -15.049116, -0.8658991)
+[node name="player" parent="." unique_id=2098263217 node_paths=PackedStringArray("enemy_lamp") instance=ExtResource("1_errlg")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 8.124323, 0.37130356, 9.317394)
 speed = 6.0
+enemy_lamp = NodePath("../EnemyLamp")
 
 [node name="Wall_lamp" parent="." unique_id=672236050 instance=ExtResource("3_74lek")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 12.510946, 1.3463409, 12.152594)
@@ -128,6 +129,7 @@ shape = SubResource("ConcavePolygonShape3D_uacia")
 
 [node name="EnemyLamp" type="Node3D" parent="." unique_id=1450170794]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -27.299017, -14.364468, -10.1809435)
+visible = false
 
 [node name="MeshInstance3D" type="MeshInstance3D" parent="EnemyLamp" unique_id=21310072]
 mesh = SubResource("BoxMesh_jcd4p")
