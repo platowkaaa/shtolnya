@@ -14,6 +14,7 @@ extends CharacterBody3D
 @export var shake_speed: float = 8.0
  
 # --- Ноды ---
+@onready var newspaper: Control = $CanvasLayer/Newspaper
 @onready var head: Node3D = $head
 @onready var ray: RayCast3D = $head/RayCast3D
 @onready var camera: Camera3D = $head/Camera3D
@@ -28,7 +29,7 @@ var inventory: Array[String] = []
  
 var reading: bool = false
 var paused: bool = false
-var game_over: bool = false # Игрок не успел. Из этого состояния выхода нет — только перезапуск.
+var ended: bool = false # Игрок не успел. Из этого состояния выхода нет — только перезапуск.
 var in_cutscene: bool = false
  
 var current_target: Node = null
@@ -68,6 +69,10 @@ func _play_ending() -> void:
 	var fade := create_tween()
 	fade.tween_property(blackout, "modulate:a", 1.0, 3.0)
 	await fade.finished
+	in_cutscene = false
+	ended = true
+	_apply_state()
+	newspaper.show_ending(true)
 
 func _play_finale_cutscene() -> void:
 	in_cutscene = true
@@ -123,13 +128,14 @@ func _update_camera_shake(delta: float) -> void:
 
 
 func _on_time_is_up() -> void:
-	game_over = true
+	ended = true
 	blackout.visible = true
+	newspaper.show_ending(false)
 	camera.rotation = Vector3.ZERO
 	_apply_state() 
 
 func is_busy() -> bool:
-	return reading or paused or game_over or in_cutscene
+	return reading or paused or ended or in_cutscene
  
 
 func read_note(pages: PackedStringArray) -> void:
@@ -152,7 +158,7 @@ func set_paused(value: bool) -> void:
  
  
 func _apply_state() -> void:
-	var world_stopped: bool = reading or paused or game_over
+	var world_stopped: bool = reading or paused or ended
 	get_tree().paused = world_stopped
 	if world_stopped:
 		Input.mouse_mode = Input.MOUSE_MODE_VISIBLE
@@ -178,7 +184,7 @@ func remove_item(item: String) -> void:
  
 func _unhandled_input(event: InputEvent) -> void:
 	if event.is_action_pressed("ui_cancel"):
-		if game_over:
+		if ended:
 			return
 
 		if reading:
