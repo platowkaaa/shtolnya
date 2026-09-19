@@ -4,6 +4,7 @@
 [ext_resource type="Script" uid="uid://cv3allni0uffa" path="res://scripts/thought_label.gd" id="2_g2els"]
 [ext_resource type="Script" uid="uid://knb2cp4ii4c4" path="res://scripts/lamp_light.gd" id="2_qhqgy"]
 [ext_resource type="Script" uid="uid://cfvkmpuxki1rs" path="res://scripts/note_panel.gd" id="4_dqkch"]
+[ext_resource type="Script" uid="uid://bk227ikuaxq7h" path="res://scripts/newspaper.gd" id="5_qlg0r"]
 
 [sub_resource type="CapsuleShape3D" id="CapsuleShape3D_g2els"]
 radius = 0.25
@@ -161,3 +162,70 @@ grow_horizontal = 2
 grow_vertical = 2
 mouse_filter = 2
 color = Color(0, 0, 0, 1)
+
+[node name="Newspaper" type="Control" parent="CanvasLayer" unique_id=501514575]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("5_qlg0r")
+body_escaped = "THE COUNTY CHRONICLE — 14th March 1902
+
+The surveyor sent down at the old pit on Tuesday came up before dark. On his report the company has ordered the shaft filled and the ground above it fenced.
+
+He has given no account of what he found below, and the plan he was sent to draw was never finished. Asked whether the work would be resumed in the spring, the manager said only that the pit is closed."
+body_lost = "THE COUNTY CHRONICLE — 14th March 1902
+
+The man sent to map the abandoned workings has not come up. A party went down as far as the flooded level on Wednesday and turned back, reporting the lower ladderways unsound.
+
+The company has ordered the shaft closed and the ground above it fenced. His name is the sixth on the parish list, and no further search is to be made."
+
+[node name="paper" type="ColorRect" parent="CanvasLayer/Newspaper" unique_id=1108612959]
+custom_minimum_size = Vector2(700, 900)
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -350.0
+offset_top = -240.0
+offset_right = 350.0
+offset_bottom = 240.0
+grow_horizontal = 2
+grow_vertical = 2
+mouse_filter = 2
+color = Color(0.8627451, 0.83137256, 0.7647059, 1)
+
+[node name="MarginContainer" type="MarginContainer" parent="CanvasLayer/Newspaper/paper" unique_id=837934811]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_constants/margin_left = 40
+theme_override_constants/margin_top = 40
+theme_override_constants/margin_right = 40
+theme_override_constants/margin_bottom = 40
+
+[node name="VBoxContainer" type="VBoxContainer" parent="CanvasLayer/Newspaper/paper/MarginContainer" unique_id=948242307]
+layout_mode = 2
+
+[node name="Headline" type="Label" parent="CanvasLayer/Newspaper/paper/MarginContainer/VBoxContainer" unique_id=888153609]
+layout_mode = 2
+theme_override_colors/font_color = Color(0.15686275, 0.1254902, 0.09803922, 1)
+theme_override_font_sizes/font_size = 40
+
+[node name="Body" type="Label" parent="CanvasLayer/Newspaper/paper/MarginContainer/VBoxContainer" unique_id=32787171]
+custom_minimum_size = Vector2(600, 0)
+layout_mode = 2
+theme_override_colors/font_color = Color(0.15686275, 0.1254902, 0.09803922, 1)
+theme_override_font_sizes/font_size = 20
+autowrap_mode = 2
+
+[node name="RestartButton" type="Button" parent="CanvasLayer/Newspaper/paper/MarginContainer/VBoxContainer" unique_id=897082043]
+layout_mode = 2
+text = "Play again"
