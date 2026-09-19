@@ -8,6 +8,7 @@
 [ext_resource type="PackedScene" uid="uid://b8bu33tnjgiq1" path="res://scenes/fuse.tscn" id="7_at5dv"]
 [ext_resource type="PackedScene" uid="uid://c0nnkru88hslv" path="res://scenes/note.tscn" id="8_jcd4p"]
 [ext_resource type="PackedScene" uid="uid://damxuilj3wtfj" path="res://assets/models/level.glb" id="8_uacia"]
+[ext_resource type="Script" uid="uid://dis76xuo7x0h5" path="res://scripts/klet.gd" id="9_uacia"]
 
 [sub_resource type="Environment" id="Environment_bl13t"]
 background_mode = 1
@@ -25,6 +26,10 @@ data = PackedVector3Array(-0.8609, 0.2617, -0.27609998, -0.8096, 0.26139998, -0.
 
 [sub_resource type="BoxMesh" id="BoxMesh_jcd4p"]
 size = Vector3(0.25, 0.35, 0.2)
+
+[sub_resource type="BoxMesh" id="BoxMesh_uacia"]
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_yk7ts"]
 
 [node name="test" type="Node3D" unique_id=1179884041]
 
@@ -140,5 +145,15 @@ light_color = Color(1, 0.78039217, 0.5411765, 1)
 light_energy = 0.5
 omni_range = 3.0
 omni_attenuation = 0.8
+
+[node name="klet" type="StaticBody3D" parent="." unique_id=1794248820 groups=["interactable"]]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -49.052547, 1.0562245, -4.164874)
+script = ExtResource("9_uacia")
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="klet" unique_id=1035791449]
+mesh = SubResource("BoxMesh_uacia")
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="klet" unique_id=112027398]
+shape = SubResource("BoxShape3D_yk7ts")
 
 [editable path="level"]
