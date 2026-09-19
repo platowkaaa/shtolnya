@@ -11,7 +11,7 @@ extends Control
 
 func _ready() -> void:
 	visible = false
-
+	$paper/MarginContainer/VBoxContainer/RestartButton.pressed.connect(_on_restart_pressed)
 
 func show_ending(escaped: bool) -> void:
 	if escaped:
@@ -22,3 +22,9 @@ func show_ending(escaped: bool) -> void:
 		body.text = body_lost
 
 	visible = true
+
+
+func _on_restart_pressed() -> void:
+	GameState.reset()
+	get_tree().paused = false
+	get_tree().reload_current_scene()
