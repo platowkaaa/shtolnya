@@ -50,11 +50,24 @@ func _ready() -> void:
 	blackout.visible = false
 	GameState.time_is_up.connect(_on_time_is_up) 
 	GameState.power_restored.connect(_play_finale_cutscene)
+	GameState.escaped.connect(_play_ending)
 
 	shake_noise.noise_type = FastNoiseLite.TYPE_PERLIN
 	shake_noise.frequency = 1.0
 	shake_noise.seed = randi()
 
+func _play_ending() -> void:
+	in_cutscene = true
+	_apply_state()
+
+	camera.rotation = Vector3.ZERO
+
+	blackout.modulate.a = 0.0
+	blackout.visible = true
+
+	var fade := create_tween()
+	fade.tween_property(blackout, "modulate:a", 1.0, 3.0)
+	await fade.finished
 
 func _play_finale_cutscene() -> void:
 	in_cutscene = true

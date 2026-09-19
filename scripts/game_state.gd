@@ -5,8 +5,9 @@ signal switch_thrown(count: int) #сигнал ждёт счётчика 0/3 н�
 signal power_restored
 signal time_is_up
 signal blackout
+signal escaped
 const TOTAL_SWITCHES: int = 3
-const ESCAPE_TIME: float = 10.0
+const ESCAPE_TIME: float = 50.0
 var time_left: float 
 var escape_running: bool = false
 
@@ -14,6 +15,10 @@ var escape_running: bool = false
 var switches_on: int = 0
 var power_on: bool = false
 
+func enter_cage() -> void:
+	escape_running = false
+	escaped.emit()
+	
 func start_escape() -> void:
 	time_left = ESCAPE_TIME
 	escape_running = true
