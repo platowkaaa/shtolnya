@@ -5,6 +5,10 @@
 [ext_resource type="Script" uid="uid://knb2cp4ii4c4" path="res://scripts/lamp_light.gd" id="2_qhqgy"]
 [ext_resource type="Script" uid="uid://cfvkmpuxki1rs" path="res://scripts/note_panel.gd" id="4_dqkch"]
 [ext_resource type="Script" uid="uid://bk227ikuaxq7h" path="res://scripts/newspaper.gd" id="5_qlg0r"]
+[ext_resource type="FontFile" uid="uid://i44tmr0wx4dm" path="res://assets/fonts/IMFellEnglish-Regular.ttf" id="5_smehm"]
+[ext_resource type="Texture2D" uid="uid://bauounw0yckjs" path="res://assets/textures/Paper005_1K-JPG_Color.jpg" id="5_ur7pv"]
+[ext_resource type="FontFile" uid="uid://bfmh74gtgqk7r" path="res://assets/fonts/OldStandardTT-Bold.ttf" id="7_ur7pv"]
+[ext_resource type="FontFile" uid="uid://chwyku3xivoe0" path="res://assets/fonts/OldStandardTT-Regular.ttf" id="8_y4r1p"]
 
 [sub_resource type="CapsuleShape3D" id="CapsuleShape3D_g2els"]
 radius = 0.25
@@ -12,6 +16,7 @@ height = 1.8
 
 [node name="player" type="CharacterBody3D" unique_id=2098263217]
 script = ExtResource("1_3vyb7")
+speed = 6.0
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="." unique_id=1744151305]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.9, 0)
@@ -102,7 +107,7 @@ grow_vertical = 2
 mouse_filter = 2
 color = Color(0, 0, 0, 0.7058824)
 
-[node name="paper" type="ColorRect" parent="CanvasLayer/NotePanel" unique_id=1385502975]
+[node name="paper" type="TextureRect" parent="CanvasLayer/NotePanel" unique_id=1473381558]
 custom_minimum_size = Vector2(700, 900)
 layout_mode = 1
 anchors_preset = 8
@@ -110,13 +115,15 @@ anchor_left = 0.5
 anchor_top = 0.5
 anchor_right = 0.5
 anchor_bottom = 0.5
-offset_left = -20.0
-offset_top = -20.0
-offset_right = 20.0
-offset_bottom = 20.0
+offset_left = -350.0
+offset_top = -450.0
+offset_right = 350.0
+offset_bottom = 450.0
 grow_horizontal = 2
 grow_vertical = 2
-color = Color(0.84705883, 0.8, 0.68235296, 0.9019608)
+texture = ExtResource("5_ur7pv")
+expand_mode = 1
+stretch_mode = 6
 
 [node name="MarginContainer" type="MarginContainer" parent="CanvasLayer/NotePanel/paper" unique_id=625859514]
 layout_mode = 1
@@ -133,6 +140,7 @@ theme_override_constants/margin_bottom = 60
 [node name="NoteText" type="Label" parent="CanvasLayer/NotePanel/paper/MarginContainer" unique_id=957182790]
 layout_mode = 2
 theme_override_colors/font_color = Color(0.16470589, 0.12156863, 0.078431375, 1)
+theme_override_fonts/font = ExtResource("5_smehm")
 theme_override_font_sizes/font_size = 28
 autowrap_mode = 2
 
@@ -183,7 +191,7 @@ The man sent to map the abandoned workings has not come up. A party went down as
 
 The company has ordered the shaft closed and the ground above it fenced. His name is the sixth on the parish list, and no further search is to be made."
 
-[node name="paper" type="ColorRect" parent="CanvasLayer/Newspaper" unique_id=1108612959]
+[node name="paper" type="TextureRect" parent="CanvasLayer/Newspaper" unique_id=1413367862]
 custom_minimum_size = Vector2(700, 900)
 layout_mode = 1
 anchors_preset = 8
@@ -192,13 +200,15 @@ anchor_top = 0.5
 anchor_right = 0.5
 anchor_bottom = 0.5
 offset_left = -350.0
-offset_top = -240.0
+offset_top = -450.0
 offset_right = 350.0
-offset_bottom = 240.0
+offset_bottom = 450.0
 grow_horizontal = 2
 grow_vertical = 2
 mouse_filter = 2
-color = Color(0.8627451, 0.83137256, 0.7647059, 1)
+texture = ExtResource("5_ur7pv")
+expand_mode = 1
+stretch_mode = 6
 
 [node name="MarginContainer" type="MarginContainer" parent="CanvasLayer/Newspaper/paper" unique_id=837934811]
 layout_mode = 1
@@ -218,15 +228,22 @@ layout_mode = 2
 [node name="Headline" type="Label" parent="CanvasLayer/Newspaper/paper/MarginContainer/VBoxContainer" unique_id=888153609]
 layout_mode = 2
 theme_override_colors/font_color = Color(0.15686275, 0.1254902, 0.09803922, 1)
-theme_override_font_sizes/font_size = 40
+theme_override_fonts/font = ExtResource("7_ur7pv")
+theme_override_font_sizes/font_size = 52
 
 [node name="Body" type="Label" parent="CanvasLayer/Newspaper/paper/MarginContainer/VBoxContainer" unique_id=32787171]
 custom_minimum_size = Vector2(600, 0)
 layout_mode = 2
+size_flags_vertical = 3
 theme_override_colors/font_color = Color(0.15686275, 0.1254902, 0.09803922, 1)
-theme_override_font_sizes/font_size = 20
+theme_override_fonts/font = ExtResource("8_y4r1p")
+theme_override_font_sizes/font_size = 28
 autowrap_mode = 2
 
 [node name="RestartButton" type="Button" parent="CanvasLayer/Newspaper/paper/MarginContainer/VBoxContainer" unique_id=897082043]
+custom_minimum_size = Vector2(240, 48)
 layout_mode = 2
+size_flags_horizontal = 4
+theme_override_fonts/font = ExtResource("8_y4r1p")
+theme_override_font_sizes/font_size = 24
 text = "Play again"

@@ -1,7 +1,7 @@
 extends StaticBody3D
 
 @export var prompt: String = "прочитать"
-@export var pages: PackedStringArray = []
+@export_multiline var pages: PackedStringArray = []
 @export var thought_text: String = ""
 
 var was_read: bool = false
