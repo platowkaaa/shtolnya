@@ -99,7 +99,7 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1.181139, 0.7114266, -2.15898
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -31.443785, -15.355708, 1.4741683)
 
 [node name="gate" parent="." unique_id=1890582651 instance=ExtResource("5_j5jx5")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -6.5906053, 1.6283684, -5.512415)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -8.883608, 1.6283684, -11.542168)
 required_item = "key"
 required_switches = 1
 
@@ -115,7 +115,7 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 5.4478083, 0.7995523, -7.0827
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -30.524933, 1.0026942, -40.03764)
 
 [node name="note" parent="." unique_id=3738516 instance=ExtResource("8_jcd4p")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -5.5292377, 0.79700315, 0.74862075)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 11.209905, 0.79700315, 12.51888)
 pages = ["WHEAL HENDRA — DIAL SURVEY, 30 fm LEVEL
 Sheet 2. Sta. 5–8. 14 March 1897.
 
@@ -124,6 +124,64 @@ Ground good. Timber sound, no run. Chained 3 ch. 42 li. from Sta. 5, bearing N 6
 Lode at Sta. 7 stands 3 ft 4 in. and clean. I have taken a sample and will take another at the 60. Whatever the returns say, this is not a poor mine.
 
 Left the lamp burning at the station, as I always do. A dial cannot be read by candle, and I have no wish to walk this ground twice in the dark.
+
+— W.H.P."]
+
+[node name="note2" parent="." unique_id=1146967516 instance=ExtResource("8_jcd4p")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -7.7870703, 0.79700315, -8.701959)
+pages = ["Sheet 4. Sta. 12–16. 19 March.
+
+My traverse will not close. I have run it twice. Between the 30 and the 40 the workings measure 214 ft longer than the plan of 1874 allows, and the error is not in my chain.
+
+A mine does not grow. Either the plan is wrong, or ground has been driven here that was never entered in the book.
+
+The dial swings 4° at Sta. 15 and will not settle. Iron, I suppose. There is enough of it about.
+
+Two men were promised me. One came. He will not go below the 40 and would not tell me why, only that it is not his week for it.
+
+— W.H.P."]
+
+[node name="note3" parent="." unique_id=1276055746 instance=ExtResource("8_jcd4p")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -15.20773, 0.79700315, -17.533033)
+pages = ["Sheet 7. 60 fm level, west end. 26 March.
+
+Water to the knee here and rising. The 70 is drowned altogether.
+
+The knocking began at 11 and I timed it. Three blows, forty seconds, three blows, and so on for one hour and eleven minutes, near enough exact. It stopped without slowing.
+
+Angove says it is the knockers and is pleased — they knock where the ground is rich. He rapped his hammer three times against the timber to answer it, for luck, he said. I told him to leave off. He was spoiling my count.
+
+It came from below me. There is nothing below me. The 70 is drowned and the 80 was never driven.
+
+— W.H.P."]
+
+[node name="note4" parent="." unique_id=691968793 instance=ExtResource("8_jcd4p")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -15.243199, 0.79700315, -25.478308)
+pages = ["Sheet 9. 27 March. Not for the office.
+
+I have had it out of Angove at last. Since Michaelmas: four men. Bennetts, Tregear, the Rowe boy, and one he would not name. All from the deep ends. All alone. None found.
+
+The Cap'n enters them as left the mine without notice, and the Adventurers read that in London and are satisfied.
+
+Tregear took the key of the shaft gate when he went. The Cap'n was three days about the key. He has not once been about Tregear.
+
+I am to report on the lode, and I shall report on the lode. But I go down to the 70 tomorrow, and if the water is too high I shall find another way — because I have measured a mine that is larger than it is, and I will not sign a plan I do not believe.
+
+— W.H.P."]
+
+[node name="note5" parent="." unique_id=319425509 instance=ExtResource("8_jcd4p")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -39.690647, -2.0696502, 1.8693314)
+pages = ["No station. I cannot fix it.
+
+There is a stair cut in the rock below the 70. It turns down, and it is the work of hands, and of a long time. No one cut it for the company. It is not on the plan of 1874 because it was here before the plan.
+
+The place at the bottom of it was not driven. It was found.
+
+I have set my lamp on the floor and I have not gone past the light. I will not write what is beyond the light, because I do not want it written in my hand.
+
+The men are here. I do not mean our men.
+
+If I do not come up, the sheets are at the stations. Someone is to fetch them.
 
 — W.H.P."]
 
