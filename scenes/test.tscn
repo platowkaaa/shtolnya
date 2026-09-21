@@ -40,7 +40,6 @@ environment = SubResource("Environment_bl13t")
 
 [node name="player" parent="." unique_id=2098263217 node_paths=PackedStringArray("enemy_lamp") instance=ExtResource("1_errlg")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 8.124323, 0.37130356, 9.317394)
-speed = 6.0
 enemy_lamp = NodePath("../EnemyLamp")
 
 [node name="Wall_lamp" parent="." unique_id=672236050 instance=ExtResource("3_74lek")]
@@ -117,7 +116,16 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -30.524933, 1.0026942, -40.03
 
 [node name="note" parent="." unique_id=3738516 instance=ExtResource("8_jcd4p")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -5.5292377, 0.79700315, 0.74862075)
-pages = ["АОЫВДАОЫВДЭАЛЫВ"]
+pages = ["WHEAL HENDRA — DIAL SURVEY, 30 fm LEVEL
+Sheet 2. Sta. 5–8. 14 March 1897.
+
+Ground good. Timber sound, no run. Chained 3 ch. 42 li. from Sta. 5, bearing N 62° E, no rise.
+
+Lode at Sta. 7 stands 3 ft 4 in. and clean. I have taken a sample and will take another at the 60. Whatever the returns say, this is not a poor mine.
+
+Left the lamp burning at the station, as I always do. A dial cannot be read by candle, and I have no wish to walk this ground twice in the dark.
+
+— W.H.P."]
 
 [node name="level" parent="." unique_id=52394556 instance=ExtResource("8_uacia")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1.6868715, -0.02463293, 0.6012852)
