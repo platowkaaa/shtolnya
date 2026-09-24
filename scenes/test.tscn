@@ -9,6 +9,7 @@
 [ext_resource type="PackedScene" uid="uid://c0nnkru88hslv" path="res://scenes/note.tscn" id="8_jcd4p"]
 [ext_resource type="PackedScene" uid="uid://damxuilj3wtfj" path="res://assets/models/level.glb" id="8_uacia"]
 [ext_resource type="Script" uid="uid://dis76xuo7x0h5" path="res://scripts/klet.gd" id="9_uacia"]
+[ext_resource type="PackedScene" uid="uid://bfmcy6wufonvt" path="res://scenes/lantern.tscn" id="10_yk7ts"]
 
 [sub_resource type="Environment" id="Environment_bl13t"]
 background_mode = 1
@@ -221,5 +222,8 @@ mesh = SubResource("BoxMesh_uacia")
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="klet" unique_id=112027398]
 shape = SubResource("BoxShape3D_yk7ts")
+
+[node name="lantern" parent="." unique_id=1539904532 instance=ExtResource("10_yk7ts")]
+transform = Transform3D(2, 0, 0, 0, 2, 0, 0, 0, 2, 6.927861, 1.3332679, 7.6324787)
 
 [editable path="level"]
