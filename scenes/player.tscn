@@ -3,6 +3,7 @@
 [ext_resource type="Script" uid="uid://dmf2tmo6rvpeq" path="res://scripts/player.gd" id="1_3vyb7"]
 [ext_resource type="Script" uid="uid://cv3allni0uffa" path="res://scripts/thought_label.gd" id="2_g2els"]
 [ext_resource type="Script" uid="uid://knb2cp4ii4c4" path="res://scripts/lamp_light.gd" id="2_qhqgy"]
+[ext_resource type="PackedScene" uid="uid://bfmcy6wufonvt" path="res://scenes/lantern.tscn" id="3_y4r1p"]
 [ext_resource type="Script" uid="uid://cfvkmpuxki1rs" path="res://scripts/note_panel.gd" id="4_dqkch"]
 [ext_resource type="Script" uid="uid://bk227ikuaxq7h" path="res://scripts/newspaper.gd" id="5_qlg0r"]
 [ext_resource type="FontFile" uid="uid://i44tmr0wx4dm" path="res://assets/fonts/IMFellEnglish-Regular.ttf" id="5_smehm"]
@@ -13,6 +14,15 @@
 [sub_resource type="CapsuleShape3D" id="CapsuleShape3D_g2els"]
 radius = 0.25
 height = 1.8
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_y4r1p"]
+resource_local_to_scene = true
+transparency = 1
+cull_mode = 2
+albedo_color = Color(0.9490196, 0.92156863, 0.85490197, 0.15686275)
+emission_enabled = true
+emission = Color(1, 0.7019608, 0.41960785, 1)
+emission_energy_multiplier = 0.4
 
 [node name="player" type="CharacterBody3D" unique_id=2098263217]
 script = ExtResource("1_3vyb7")
@@ -32,15 +42,38 @@ fov = 70.0
 target_position = Vector3(0, 0, -2.5)
 
 [node name="Lamp" type="Node3D" parent="head" unique_id=1056255662]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.3, -0.3, -0.05)
+transform = Transform3D(0.391984, 0, 0.9199722, 0, 1, 0, -0.9199722, 0, 0.391984, 0.44031936, -0.19902086, -0.530175)
 
 [node name="OmniLight3D" type="OmniLight3D" parent="head/Lamp" unique_id=440838406]
 light_color = Color(1, 0.78039217, 0.5411765, 1)
 light_energy = 1.8
+light_cull_mask = 4294967293
 shadow_enabled = true
 omni_range = 10.0
 omni_attenuation = 1.5
 script = ExtResource("2_qhqgy")
+
+[node name="lantern" parent="head/Lamp" unique_id=1539904532 instance=ExtResource("3_y4r1p")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -0.083, 0)
+
+[node name="tank" parent="head/Lamp/lantern" index="0" unique_id=23504663]
+layers = 2
+
+[node name="glass" parent="head/Lamp/lantern/tank" index="0" unique_id=530106406]
+layers = 2
+surface_material_override/0 = SubResource("StandardMaterial3D_y4r1p")
+
+[node name="guard" parent="head/Lamp/lantern/tank" index="1" unique_id=1743966453]
+layers = 2
+
+[node name="handle" parent="head/Lamp/lantern/tank/guard" index="0" unique_id=1646135347]
+layers = 2
+
+[node name="FillLight" type="OmniLight3D" parent="head" unique_id=1990807920]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.31116033, -0.07961333, -0.32763946)
+light_energy = 0.3
+light_cull_mask = 4294966274
+omni_range = 1.0
 
 [node name="CanvasLayer" type="CanvasLayer" parent="." unique_id=1616116596]
 
@@ -247,3 +280,5 @@ size_flags_horizontal = 4
 theme_override_fonts/font = ExtResource("8_y4r1p")
 theme_override_font_sizes/font_size = 24
 text = "Play again"
+
+[editable path="head/Lamp/lantern"]

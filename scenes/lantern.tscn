@@ -2,9 +2,11 @@
 
 [ext_resource type="PackedScene" uid="uid://cy28sg4cxe7c6" path="res://assets/models/lantern.glb" id="1_uxgnm"]
 [ext_resource type="Material" uid="uid://dxuwv3sgi4hd0" path="res://assets/material/lantern_metal.tres" id="2_jdg25"]
+[ext_resource type="Script" uid="uid://0irlsljsvbu6" path="res://scripts/lantern.gd" id="2_y6stn"]
 [ext_resource type="Texture2D" uid="uid://dv4xuovr37cwi" path="res://assets/textures/flame.png" id="3_jdg25"]
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_y6stn"]
+resource_local_to_scene = true
 transparency = 1
 cull_mode = 2
 albedo_color = Color(0.9490196, 0.92156863, 0.85490197, 0.15686275)
@@ -21,28 +23,29 @@ transparency = 1
 shading_mode = 0
 albedo_texture = ExtResource("3_jdg25")
 texture_filter = 0
-billboard_mode = 2
+billboard_mode = 1
 
 [node name="lantern" unique_id=1539904532 instance=ExtResource("1_uxgnm")]
+script = ExtResource("2_y6stn")
 
-[node name="tank" parent="." index="0" unique_id=2111806593]
+[node name="tank" parent="." index="0" unique_id=1611197768]
 cast_shadow = 0
 surface_material_override/0 = ExtResource("2_jdg25")
 
-[node name="glass" parent="tank" index="0" unique_id=291297348]
+[node name="glass" parent="tank" index="0" unique_id=198250804]
 cast_shadow = 0
 surface_material_override/0 = SubResource("StandardMaterial3D_y6stn")
 
-[node name="MeshInstance3D" type="MeshInstance3D" parent="tank/glass/Flame" parent_id_path=PackedInt32Array(495419861) index="0" unique_id=350165982]
+[node name="FlameSprite" type="MeshInstance3D" parent="tank/glass/Flame" parent_id_path=PackedInt32Array(280210792) index="0" unique_id=350165982]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.08258756, 0)
 cast_shadow = 0
 mesh = SubResource("QuadMesh_y6stn")
 surface_material_override/0 = SubResource("StandardMaterial3D_4a08e")
 
-[node name="guard" parent="tank" index="1" unique_id=350256601]
+[node name="guard" parent="tank" index="1" unique_id=1719681578]
 cast_shadow = 0
 surface_material_override/0 = ExtResource("2_jdg25")
 
-[node name="handle" parent="tank/guard" index="0" unique_id=392981544]
+[node name="handle" parent="tank/guard" index="0" unique_id=1824583197]
 cast_shadow = 0
 surface_material_override/0 = ExtResource("2_jdg25")

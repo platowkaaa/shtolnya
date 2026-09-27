@@ -21,6 +21,7 @@ extends CharacterBody3D
 @onready var prompt_label: Label = $CanvasLayer/Interact/PromptLabel
 @onready var note_panel: Control = $CanvasLayer/NotePanel
 @onready var blackout: ColorRect = $CanvasLayer/Blackout 
+@onready var lamp: Node3D = $head/Lamp
 @export var enemy_lamp: Node3D
 
 # --- Состояние ---
@@ -29,8 +30,15 @@ var inventory: Array[String] = []
  
 var reading: bool = false
 var paused: bool = false
-var ended: bool = false # Игрок не успел. Из этого состояния выхода нет — только перезапуск.
+var ended: bool = false # Игра кончилась — побегом или смертью. Выхода нет, только перезапуск.
 var in_cutscene: bool = false
+
+# --- Лампа не лезет в стены ---
+const LAMP_TUCKED := Vector3(0.2, -0.75, -0.25)  # лампа опущена к поясу, ниже кадра
+const LAMP_REACH: float = 1.4  # луч идёт через лампу и на 40% дальше
+const LAMP_RADIUS: float = 0.2  # шар-щуп размером с лампу
+var lamp_base_pos: Vector3
+var lamp_probe := SphereShape3D.new()
  
 var current_target: Node = null
  
@@ -56,6 +64,9 @@ func _ready() -> void:
 	shake_noise.noise_type = FastNoiseLite.TYPE_PERLIN
 	shake_noise.frequency = 1.0
 	shake_noise.seed = randi()
+
+	lamp_base_pos = lamp.position
+	lamp_probe.radius = LAMP_RADIUS
 
 func _play_ending() -> void:
 	in_cutscene = true
@@ -282,3 +293,22 @@ func _physics_process(delta: float) -> void:
 		velocity.z = move_toward(velocity.z, 0.0, speed * 10.0 * delta)
  
 	move_and_slide()
+	_update_lamp_pushback(delta)
+
+
+# От глаз к лампе летит невидимый шар размером с лампу. Задел стену —
+# лампа плавно опускается к поясу. Свет дочерний к Lamp и уходит вместе с ней.
+func _update_lamp_pushback(delta: float) -> void:
+	var from := head.global_position
+	var center := lamp_base_pos + Vector3(0.0, 0.08, 0.0)  # середина лампы, а не пламя
+	var to := head.to_global(center * LAMP_REACH)
+
+	var query := PhysicsShapeQueryParameters3D.new()
+	query.shape = lamp_probe
+	query.transform = Transform3D(Basis(), from)
+	query.motion = to - from
+	query.exclude = [get_rid()]
+	var free_part: float = get_world_3d().direct_space_state.cast_motion(query)[0]
+
+	var target := lamp_base_pos.lerp(LAMP_TUCKED, 1.0 - free_part)
+	lamp.position = lamp.position.lerp(target, 1.0 - exp(-delta * 12.0))
