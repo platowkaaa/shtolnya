@@ -26,7 +26,6 @@ emission_energy_multiplier = 0.4
 
 [node name="player" type="CharacterBody3D" unique_id=2098263217]
 script = ExtResource("1_3vyb7")
-speed = 6.0
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="." unique_id=1744151305]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.9, 0)
@@ -52,6 +51,7 @@ shadow_enabled = true
 omni_range = 10.0
 omni_attenuation = 1.5
 script = ExtResource("2_qhqgy")
+base_energy = 0.5
 
 [node name="lantern" parent="head/Lamp" unique_id=1539904532 instance=ExtResource("3_y4r1p")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -0.083, 0)
@@ -71,9 +71,9 @@ layers = 2
 
 [node name="FillLight" type="OmniLight3D" parent="head" unique_id=1990807920]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.31116033, -0.07961333, -0.32763946)
-light_energy = 0.3
+light_energy = 0.1
 light_cull_mask = 4294966274
-omni_range = 1.0
+omni_range = 0.5
 
 [node name="CanvasLayer" type="CanvasLayer" parent="." unique_id=1616116596]
 

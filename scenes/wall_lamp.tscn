@@ -22,7 +22,6 @@ shadow_enabled = true
 omni_range = 8.0
 omni_attenuation = 0.7
 script = ExtResource("2_xsmc4")
-base_energy = 0.2
 flicker_strength = 1.0
 flicker_speed = 1.5
 

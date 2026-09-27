@@ -1,6 +1,6 @@
 extends OmniLight3D
 
-@export var base_energy: float = 0.4     # яркость в спокойном состоянии
+@export var base_energy: float = 0.275     # яркость в спокойном состоянии
 @export var flicker_strength: float = 0.4 # насколько сильно гуляет яркость (0.15 = +-15%)
 @export var flicker_speed: float = 2.0     # как быстро колеблется пламя
 @export var sway_strength: float = 0.012   # смещение источника в метрах

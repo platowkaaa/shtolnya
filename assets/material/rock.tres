@@ -1,0 +1,15 @@
+[gd_resource type="StandardMaterial3D" format=3 uid="uid://bxd2q0xpfbdjr"]
+
+[ext_resource type="Texture2D" uid="uid://khfm361266jc" path="res://assets/models/level_Rock060_1K-JPG_Color.jpg" id="1_aio3o"]
+[ext_resource type="Texture2D" uid="uid://gj0ko46uqcmq" path="res://assets/models/level_Rock060_1K-JPG_NormalGL.jpg" id="2_3nv1g"]
+[ext_resource type="Texture2D" uid="uid://x5nth8scjm2k" path="res://assets/models/level_Rock060_1K-JPG_Roughness.png" id="3_f0fog"]
+
+[resource]
+albedo_texture = ExtResource("1_aio3o")
+roughness_texture = ExtResource("3_f0fog")
+normal_enabled = true
+normal_texture = ExtResource("2_3nv1g")
+uv1_scale = Vector3(0.04, 0.04, 0.04)
+uv1_triplanar = true
+uv1_world_triplanar = true
+texture_filter = 2
