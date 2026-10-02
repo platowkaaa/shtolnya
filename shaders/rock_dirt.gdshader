@@ -20,7 +20,9 @@ uniform sampler2D dirt_normal : hint_normal, filter_nearest_mipmap, repeat_enabl
 uniform float dirt_scale = 0.5; // больше — земля мельче
 
 group_uniforms blend;
-uniform float mask_softness : hint_range(0.01, 1.0) = 0.4;   // ширина перехода камень → земля
+uniform float mask_threshold : hint_range(0.0, 1.0) = 0.7;   // больше — земля ниже, ближе к закрашенному
+uniform float mask_softness : hint_range(0.01, 1.0) = 0.3;   // ширина перехода камень → земля
+uniform float floor_slope : hint_range(0.0, 1.0) = 0.6;      // земля только на ровном: больше — только совсем горизонтальный пол
 uniform float edge_noise : hint_range(0.0, 1.0) = 0.3;       // рваность границы
 uniform float normal_strength : hint_range(0.0, 2.0) = 1.0;  // сила рельефа
 uniform float axis_sharpness = 4.0;                          // как резко стыкуются три проекции
@@ -86,7 +88,9 @@ void fragment() {
 	// чтобы граница была рваной, а не ровной полосой.
 	float dirt = 1.0 - COLOR.r;
 	dirt += (rock_rough - 0.5) * edge_noise;
-	dirt = smoothstep(0.5 - mask_softness * 0.5, 0.5 + mask_softness * 0.5, dirt);
+	dirt = smoothstep(mask_threshold - mask_softness * 0.5, mask_threshold + mask_softness * 0.5, dirt);
+	// Земля не лезет на стены: только там, где поверхность смотрит вверх.
+	dirt *= smoothstep(floor_slope - 0.15, floor_slope + 0.15, n.y);
 
 	ALBEDO = mix(rock_col, dirt_col, dirt);
 	ROUGHNESS = mix(rock_rough, dirt_rough, dirt);
