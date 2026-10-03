@@ -25,3 +25,6 @@ desktop.ini
 # --- Source references ---
 # Third-party photos and boards, not ours to publish.
 source/refs/
+# Personal notes
+concept.md
+IDEAS.md

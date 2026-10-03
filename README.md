@@ -1,51 +1,49 @@
-# Shtolnya
+# The Adit
 
-First-person horror set in an abandoned mine, 1902.
-Solo project, in development. Target release: February 2027.
+A short first-person horror game set in an abandoned Cornish tin mine, 1897.
+Made solo in Godot 4 as a portfolio project.
 
-## Premise
+## About
 
-You are a mine surveyor, sent to map a pit that was shut down five years ago.
-You descend with an oil lamp and a drawing board. The rock collapses behind you.
+Wheal Hendra, March 1897. The mine surveyor W. H. Pascoe went down to finish
+his survey and never came back up. His survey sheets are still down there.
 
-The only way out is the old ventilation shaft. To raise the cage you need power:
-three switches, on three levels. The shaft gate is locked.
+You go down after him with a lantern. Light the wall lamps to mark your way
+back, find the surveyor's notes, and restore power to reach the cage.
+Once the power is on, something else knows you are there.
 
-The mine was not abandoned because the ore ran out.
+## Controls
 
-## Core mechanics
+| Key     | Action               |
+|---------|----------------------|
+| W A S D | Move                 |
+| Mouse   | Look                 |
+| Shift   | Walk faster          |
+| E       | Interact / next page |
+| Esc     | Pause / close note   |
 
-1. **Lamps.** Wall-mounted kerosene lamps across the mine. You light them with your own. A lit lamp is light, a landmark, and a way back — one mechanic doing three jobs.
-2. **Three switches.** One per zone. Each needs something small: clean the contacts, fit a fuse, turn a valve.
-3. **The key.** Found in the flooded level. The gate does not open without it.
+## Running the project
+
+1. Install Godot 4.6.
+2. Clone this repository.
+3. Open `project.godot` in Godot and press F5.
+
+## Status
+
+- [x] Core loop on blockout (v0.1-loop)
+- [x] Full playthrough, start to ending (v0.2-slice)
+- [ ] Art pass: models and textures (in progress)
+- [ ] Shaders, light and sound
+- [ ] Release on itch.io
 
 ## Tech
 
-- Godot **4.6.3**, Compatibility renderer — the project ships to web
-- GDScript
-- Blender for models, from phase D onward
-- Custom shaders: PSX vertex jitter, colour quantisation, water, light-revealed symbols
-
-## Structure
-
-- `source/` — working files: .blend, reference boards (not imported by Godot)
-- `scenes/` — Godot scenes
-- `scripts/` — GDScript
-- `shaders/` — .gdshader files
-- `assets/` — models, textures, sounds
-- `notes/` — in-game written material
-- `screenshots/` — weekly progress shots
-
-## Roadmap
-
-| Phase | Content | Status |
-|-------|---------|--------|
-| A | Foundation, repository, concept | in progress |
-| B | Core loop on grey boxes | — |
-| C | Ending, first full playthrough | — |
-| D | Models, modular kit | — |
-| E | Light, shaders, release | — |
+- Godot 4.6, Compatibility renderer, GDScript
+- Blender for all 3D models
+- Custom triplanar shader that blends rock and dirt with a vertex-colour mask painted in Blender
 
 ## Credits
 
-Third-party assets are listed in CREDITS.txt as they are added.
+Made by Platon.
+Third-party assets are listed in [CREDITS.md](CREDITS.md).
+Built with help from an AI assistant (Claude) for ideas, code help, placeholder textures and text drafts.
