@@ -46,4 +46,4 @@ Once the power is on, something else knows you are there.
 
 Made by Platon.
 Third-party assets are listed in [CREDITS.md](CREDITS.md).
-Built with help from an AI assistant (Claude) for ideas, code help, placeholder textures and text drafts.
+Built with help from an AI assistant (Claude) code help, placeholder textures and text drafts.
