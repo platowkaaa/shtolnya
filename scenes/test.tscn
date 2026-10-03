@@ -13,6 +13,7 @@
 [ext_resource type="Texture2D" uid="uid://khfm361266jc" path="res://assets/textures/level_Rock060_1K-JPG_Color.jpg" id="10_7mbro"]
 [ext_resource type="Texture2D" uid="uid://gj0ko46uqcmq" path="res://assets/textures/level_Rock060_1K-JPG_NormalGL.jpg" id="11_ff6ho"]
 [ext_resource type="Texture2D" uid="uid://x5nth8scjm2k" path="res://assets/textures/level_Rock060_1K-JPG_Roughness.png" id="12_7yos8"]
+[ext_resource type="PackedScene" uid="uid://4gdy28w2c1sg" path="res://scenes/frame.tscn" id="14_7mbro"]
 
 [sub_resource type="Environment" id="Environment_bl13t"]
 background_mode = 1
@@ -53,7 +54,7 @@ size = Vector3(0.25, 0.35, 0.2)
 environment = SubResource("Environment_bl13t")
 
 [node name="player" parent="." unique_id=2098263217 node_paths=PackedStringArray("enemy_lamp") instance=ExtResource("1_errlg")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 8.26536, 0.48817348, 9.991228)
+transform = Transform3D(-0.8507653, 0, -0.52554584, 0, 1, 0, 0.52554584, 0, -0.8507653, -38.03964, 0.48817348, -16.92355)
 speed = 1.5
 enemy_lamp = NodePath("../EnemyLamp")
 
@@ -130,7 +131,7 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 5.4478083, 0.7995523, -7.0827
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -30.524933, 1.0026942, -40.03764)
 
 [node name="note" parent="." unique_id=3738516 instance=ExtResource("8_jcd4p")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 11.209905, 0.79700315, 12.51888)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 11.209905, 0.79700315, 11.701165)
 pages = ["WHEAL HENDRA — DIAL SURVEY, 30 fm LEVEL
 Sheet 2. Sta. 5–8. 14 March 1897.
 
@@ -242,5 +243,44 @@ mesh = SubResource("BoxMesh_uacia")
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="klet" unique_id=112027398]
 shape = SubResource("BoxShape3D_yk7ts")
+
+[node name="frame" parent="." unique_id=1621843156 instance=ExtResource("14_7mbro")]
+transform = Transform3D(0.82542217, 0, 0.30508727, 0, 0.8800001, 0, -0.30508727, 0, 0.82542217, 6.5331206, 0.061745852, 11.658057)
+
+[node name="frame6" parent="." unique_id=557048982 instance=ExtResource("14_7mbro")]
+transform = Transform3D(0.7423083, 0, -0.47262943, 0, 0.8800001, 0, 0.47262943, 0, 0.7423083, 4.636138, 0.051305085, 6.636743)
+
+[node name="frame7" parent="." unique_id=976887295 instance=ExtResource("14_7mbro")]
+transform = Transform3D(0.605373, 0, -0.63868874, 0, 0.88000005, 0, 0.63868874, 0, 0.605373, 1.5320606, 0.10664663, 4.335129)
+
+[node name="frame9" parent="." unique_id=1350285443 instance=ExtResource("14_7mbro")]
+transform = Transform3D(-0.81270206, 0, -0.33751327, 0, 0.88000005, 0, 0.33751327, 0, -0.81270206, 1.2800655, 0.16600093, -6.382551)
+
+[node name="frame10" parent="." unique_id=1876081559 instance=ExtResource("14_7mbro")]
+transform = Transform3D(-0.7831841, 0, 0.401276, 0, 0.88, 0, -0.401276, 0, -0.7831841, -6.2942924, 0.08017436, -5.653155)
+
+[node name="frame11" parent="." unique_id=911055152 instance=ExtResource("14_7mbro")]
+transform = Transform3D(-0.85381544, 0, -0.21306986, 0, 0.88, 0, 0.21306986, 0, -0.85381544, -6.2942924, 0.08017436, -13.130304)
+
+[node name="frame12" parent="." unique_id=1975965605 instance=ExtResource("14_7mbro")]
+transform = Transform3D(-0.5986627, 0, 0.6449826, 0, 0.8800001, 0, -0.6449826, 0, -0.5986627, -10.292825, 0.0678536, -13.783606)
+
+[node name="frame13" parent="." unique_id=2079974015 instance=ExtResource("14_7mbro")]
+transform = Transform3D(0.8646445, 0, 0.67999226, 0, 1.1, 0, -0.67999226, 0, 0.8646445, -39.884453, -0.19029143, -13.822441)
+
+[node name="frame8" parent="." unique_id=1273574560 instance=ExtResource("14_7mbro")]
+transform = Transform3D(0.7264112, 0, 0.20943426, 0, 0.75599986, 0, -0.20943426, 0, 0.7264112, 13.172529, 0.30935094, 12.391274)
+
+[node name="frame2" parent="." unique_id=1270183371 instance=ExtResource("14_7mbro")]
+transform = Transform3D(0.818, 0, 0.00015699677, 0, 0.818, 0, -0.00015699677, 0, 0.818, 3.3719902, 0.250411, 12.415023)
+
+[node name="frame3" parent="." unique_id=1063003239 instance=ExtResource("14_7mbro")]
+transform = Transform3D(0.7640875, 0, -0.2920518, 0, 0.8179999, 0, 0.2920518, 0, 0.7640875, -0.41961646, 0.23233065, 11.701568)
+
+[node name="frame4" parent="." unique_id=1972297225 instance=ExtResource("14_7mbro")]
+transform = Transform3D(0.53501654, 0, -0.61877394, 0, 0.818, 0, 0.61877394, 0, 0.53501654, -6.3210287, 0.30653283, 11.038853)
+
+[node name="frame5" parent="." unique_id=1842697281 instance=ExtResource("14_7mbro")]
+transform = Transform3D(-0.47693095, 0, -0.6645758, 0, 0.81800014, 0, 0.6645758, 0, -0.47693095, -7.7553625, 0.25432095, 3.7497025)
 
 [editable path="level"]
