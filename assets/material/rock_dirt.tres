@@ -4,9 +4,9 @@
 [ext_resource type="Texture2D" uid="uid://b3vtop3203m0" path="res://assets/textures/Ground048_1K-JPG_Color.jpg" id="2_7oswy"]
 [ext_resource type="Texture2D" uid="uid://deepab1sg8gxx" path="res://assets/textures/Ground048_1K-JPG_NormalGL.jpg" id="3_ibap1"]
 [ext_resource type="Texture2D" uid="uid://d0jc5g2vd10t6" path="res://assets/textures/Ground048_1K-JPG_Roughness.jpg" id="4_tk1wd"]
-[ext_resource type="Texture2D" uid="uid://khfm361266jc" path="res://assets/textures/level_Rock060_1K-JPG_Color.jpg" id="5_jagot"]
-[ext_resource type="Texture2D" uid="uid://gj0ko46uqcmq" path="res://assets/textures/level_Rock060_1K-JPG_NormalGL.jpg" id="6_7oswy"]
-[ext_resource type="Texture2D" uid="uid://x5nth8scjm2k" path="res://assets/textures/level_Rock060_1K-JPG_Roughness.png" id="7_ibap1"]
+[ext_resource type="Texture2D" uid="uid://cioy2wmw5om30" path="res://assets/textures/Rock060_1K-JPG_Color.jpg" id="5_jagot"]
+[ext_resource type="Texture2D" uid="uid://b85ira75j02c0" path="res://assets/textures/Rock060_1K-JPG_NormalGL.jpg" id="6_7oswy"]
+[ext_resource type="Texture2D" uid="uid://bw7rt8a7b86fo" path="res://assets/textures/Rock060_1K-JPG_Roughness.jpg" id="7_ibap1"]
 
 [resource]
 render_priority = 0

@@ -2,20 +2,17 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://lj1p3qw5yfb1"
-path.s3tc="res://.godot/imported/timber_set_rough_wood_rough_1k.png-098b31c9a3931eec22561f2e032dc776.s3tc.ctex"
+uid="uid://bw7rt8a7b86fo"
+path.s3tc="res://.godot/imported/Rock060_1K-JPG_Roughness.jpg-7d885581d1a020b2e4132e9eb5a8c386.s3tc.ctex"
 metadata={
 "imported_formats": ["s3tc_bptc"],
 "vram_texture": true
 }
-generator_parameters={
-"md5": "c4839767601cb1c79955ff59d2bf85a8"
-}
 
 [deps]
 
-source_file="res://assets/textures/timber_set_rough_wood_rough_1k.png"
-dest_files=["res://.godot/imported/timber_set_rough_wood_rough_1k.png-098b31c9a3931eec22561f2e032dc776.s3tc.ctex"]
+source_file="res://assets/textures/Rock060_1K-JPG_Roughness.jpg"
+dest_files=["res://.godot/imported/Rock060_1K-JPG_Roughness.jpg-7d885581d1a020b2e4132e9eb5a8c386.s3tc.ctex"]
 
 [params]
 

@@ -2,20 +2,20 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://gj0ko46uqcmq"
-path.s3tc="res://.godot/imported/level_Rock060_1K-JPG_NormalGL.jpg-c629a216302ee233d638901eb2253df1.s3tc.ctex"
+uid="uid://cfgu8ivxw6wcu"
+path.s3tc="res://.godot/imported/timber_set_rough_wood_diff_1k.jpg-942838d5ecc6ca1f02d471a746a25727.s3tc.ctex"
 metadata={
 "imported_formats": ["s3tc_bptc"],
 "vram_texture": true
 }
 generator_parameters={
-"md5": "607c7a7d3e537cfd869164fcf3fcbea5"
+"md5": "5f494e0abc93b30e9f025e92695be4a3"
 }
 
 [deps]
 
-source_file="res://assets/textures/level_Rock060_1K-JPG_NormalGL.jpg"
-dest_files=["res://.godot/imported/level_Rock060_1K-JPG_NormalGL.jpg-c629a216302ee233d638901eb2253df1.s3tc.ctex"]
+source_file="res://assets/models/timber_set_rough_wood_diff_1k.jpg"
+dest_files=["res://.godot/imported/timber_set_rough_wood_diff_1k.jpg-942838d5ecc6ca1f02d471a746a25727.s3tc.ctex"]
 
 [params]
 
@@ -25,12 +25,12 @@ compress/lossy_quality=0.7
 compress/uastc_level=0
 compress/rdo_quality_loss=0.0
 compress/hdr_compression=1
-compress/normal_map=1
+compress/normal_map=0
 compress/channel_pack=0
 mipmaps/generate=true
 mipmaps/limit=-1
-roughness/mode=1
-roughness/src_normal="res://assets/models/level_Rock060_1K-JPG_NormalGL.jpg"
+roughness/mode=0
+roughness/src_normal=""
 process/channel_remap/red=0
 process/channel_remap/green=1
 process/channel_remap/blue=2

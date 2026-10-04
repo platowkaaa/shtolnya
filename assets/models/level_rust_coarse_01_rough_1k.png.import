@@ -2,20 +2,20 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://khfm361266jc"
-path.s3tc="res://.godot/imported/level_Rock060_1K-JPG_Color.jpg-119e8974ec79aae866f92cbb57f3100e.s3tc.ctex"
+uid="uid://bfe3sfma8hwr7"
+path.s3tc="res://.godot/imported/level_rust_coarse_01_rough_1k.png-509718b2366571cdc10d575458b06378.s3tc.ctex"
 metadata={
 "imported_formats": ["s3tc_bptc"],
 "vram_texture": true
 }
 generator_parameters={
-"md5": "4d219cce72d4504d189366f6dbf8aa65"
+"md5": "e1fb53e23ce45dbc81cc7e32c3ad4700"
 }
 
 [deps]
 
-source_file="res://assets/textures/level_Rock060_1K-JPG_Color.jpg"
-dest_files=["res://.godot/imported/level_Rock060_1K-JPG_Color.jpg-119e8974ec79aae866f92cbb57f3100e.s3tc.ctex"]
+source_file="res://assets/models/level_rust_coarse_01_rough_1k.png"
+dest_files=["res://.godot/imported/level_rust_coarse_01_rough_1k.png-509718b2366571cdc10d575458b06378.s3tc.ctex"]
 
 [params]
 

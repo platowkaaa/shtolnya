@@ -2,20 +2,20 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://dk7e8x2e3hih0"
-path.s3tc="res://.godot/imported/timber_set_rough_wood_diff_1k.jpg-faa8bac373a5305e7dfffc36e76e25b5.s3tc.ctex"
+uid="uid://dcdjtrfvkvd0j"
+path.s3tc="res://.godot/imported/level_rust_coarse_01_diff_1k.jpg-04aeb06fb1195212f3e64b46c07b6f4d.s3tc.ctex"
 metadata={
 "imported_formats": ["s3tc_bptc"],
 "vram_texture": true
 }
 generator_parameters={
-"md5": "5f494e0abc93b30e9f025e92695be4a3"
+"md5": "857a3121362108be0c49890a614e8944"
 }
 
 [deps]
 
-source_file="res://assets/textures/timber_set_rough_wood_diff_1k.jpg"
-dest_files=["res://.godot/imported/timber_set_rough_wood_diff_1k.jpg-faa8bac373a5305e7dfffc36e76e25b5.s3tc.ctex"]
+source_file="res://assets/models/level_rust_coarse_01_diff_1k.jpg"
+dest_files=["res://.godot/imported/level_rust_coarse_01_diff_1k.jpg-04aeb06fb1195212f3e64b46c07b6f4d.s3tc.ctex"]
 
 [params]
 
