@@ -10,6 +10,7 @@
 [ext_resource type="PackedScene" uid="uid://damxuilj3wtfj" path="res://assets/models/level.glb" id="8_uacia"]
 [ext_resource type="Material" uid="uid://dukuhixevltve" path="res://assets/material/rock_dirt.tres" id="9_44saj"]
 [ext_resource type="Script" uid="uid://dis76xuo7x0h5" path="res://scripts/klet.gd" id="9_uacia"]
+[ext_resource type="PackedScene" uid="uid://sxshr8djl0wp" path="res://scenes/minecart.tscn" id="10_ghpyy"]
 [ext_resource type="PackedScene" uid="uid://4gdy28w2c1sg" path="res://scenes/frame.tscn" id="14_7mbro"]
 
 [sub_resource type="Environment" id="Environment_bl13t"]
@@ -44,7 +45,7 @@ size = Vector3(0.25, 0.35, 0.2)
 environment = SubResource("Environment_bl13t")
 
 [node name="player" parent="." unique_id=2098263217 node_paths=PackedStringArray("enemy_lamp") instance=ExtResource("1_errlg")]
-transform = Transform3D(-0.8507653, 0, -0.52554584, 0, 1, 0, 0.52554584, 0, -0.8507653, -1.317936, 0.48817348, -1.5970058)
+transform = Transform3D(-0.8507653, 0, -0.52554584, 0, 1, 0, 0.52554584, 0, -0.8507653, -3.0054955, 0.48817348, -13.110718)
 speed = 1.5
 enemy_lamp = NodePath("../EnemyLamp")
 
@@ -89,7 +90,7 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -38.835686, -14.412635, 2.480
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -32.323708, -15.115531, 0.9567237)
 
 [node name="Wall_lamp7" parent="." unique_id=1285474234 instance=ExtResource("3_74lek")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -2.446198, 1.3463409, -12.166206)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -6.458571, 1.3463409, -13.435077)
 
 [node name="Wall_lamp9" parent="." unique_id=1858199683 instance=ExtResource("3_74lek")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -17.381107, 1.3463409, -17.503407)
@@ -105,7 +106,7 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1.181139, 0.7114266, -2.15898
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -31.443785, -15.355708, 1.4741683)
 
 [node name="gate" parent="." unique_id=1890582651 instance=ExtResource("5_j5jx5")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -8.883608, 1.6283684, -11.542168)
+transform = Transform3D(0.76360446, 0, 0.6456843, 0, 1, 0, -0.6456843, 0, 0.76360446, -9.683609, 1.6283684, -13.302179)
 required_item = "key"
 required_switches = 1
 
@@ -194,10 +195,10 @@ If I do not come up, the sheets are at the stations. Someone is to fetch them.
 [node name="level" parent="." unique_id=52394556 instance=ExtResource("8_uacia")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1.6868715, -0.02463293, 0.6012852)
 
-[node name="Cube" parent="level" index="0" unique_id=757656444]
+[node name="Cube" parent="level" index="0" unique_id=1756049344]
 surface_material_override/0 = ExtResource("9_44saj")
 
-[node name="Sphere_cell_001" parent="level/Cube" index="0" unique_id=891264124]
+[node name="Sphere_cell_001" parent="level/Cube" index="0" unique_id=1822013023]
 surface_material_override/0 = ExtResource("9_44saj")
 
 [node name="StaticBody3D" type="StaticBody3D" parent="level/Cube/Sphere_cell_001" index="0" unique_id=1137285834]
@@ -205,7 +206,7 @@ surface_material_override/0 = ExtResource("9_44saj")
 [node name="CollisionShape3D" type="CollisionShape3D" parent="level/Cube/Sphere_cell_001/StaticBody3D" unique_id=584668873]
 shape = SubResource("ConcavePolygonShape3D_ghpyy")
 
-[node name="Sphere_cell_028" parent="level/Cube" index="1" unique_id=570010070]
+[node name="Sphere_cell_028" parent="level/Cube" index="1" unique_id=1335887062]
 surface_material_override/0 = ExtResource("9_44saj")
 
 [node name="StaticBody3D" type="StaticBody3D" parent="level/Cube/Sphere_cell_028" index="0" unique_id=293793076]
@@ -217,6 +218,9 @@ shape = SubResource("ConcavePolygonShape3D_44saj")
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="level/Cube/StaticBody3D" unique_id=1489287868]
 shape = SubResource("ConcavePolygonShape3D_ajshl")
+
+[node name="minecart" parent="level" unique_id=549693761 instance=ExtResource("10_ghpyy")]
+transform = Transform3D(0.8692016, 0, -0.49445793, 0, 1, 0, 0.49445793, 0, 0.8692016, 0.39674854, 0.63145775, -13.153813)
 
 [node name="EnemyLamp" type="Node3D" parent="." unique_id=1450170794]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -27.299017, -14.364468, -10.1809435)
