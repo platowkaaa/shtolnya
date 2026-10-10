@@ -1,0 +1,9 @@
+[gd_scene format=3 uid="uid://btj8mlqlubnle"]
+
+[ext_resource type="PackedScene" uid="uid://b8lteah216wp" path="res://assets/models/shelf.glb" id="1_eyi4x"]
+
+[node name="shelf" type="Node3D" unique_id=1995179851]
+
+[node name="shelf" parent="." unique_id=1653423052 instance=ExtResource("1_eyi4x")]
+
+[editable path="shelf"]

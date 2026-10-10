@@ -1,0 +1,9 @@
+[gd_scene format=3 uid="uid://dorcn8rhlii6o"]
+
+[ext_resource type="PackedScene" uid="uid://dgmhb8ofq5mum" path="res://assets/models/medicalbox.glb" id="1_lnb1i"]
+
+[node name="medicalbox" type="Node3D" unique_id=284432297]
+
+[node name="medicalbox" parent="." unique_id=515747559 instance=ExtResource("1_lnb1i")]
+
+[editable path="medicalbox"]

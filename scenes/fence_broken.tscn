@@ -1,0 +1,9 @@
+[gd_scene format=3 uid="uid://itw3bsae31ug"]
+
+[ext_resource type="PackedScene" uid="uid://0rl7g434m5dr" path="res://assets/models/fence_hard_broken.glb" id="1_v881a"]
+
+[node name="fence_broken" type="Node3D" unique_id=340609278]
+
+[node name="fence_hard_broken" parent="." unique_id=565727445 instance=ExtResource("1_v881a")]
+
+[editable path="fence_hard_broken"]

@@ -2,20 +2,20 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://cnmfv8u5k1llj"
-path.s3tc="res://.godot/imported/lantern_lantern_metal_256.png-a752bd9db65d44e5f3fd6d729f7d6107.s3tc.ctex"
+uid="uid://duwll35274nhx"
+path.s3tc="res://.godot/imported/lift_grid.png-133bd6b8671a4890d75b34e1c41409f4.s3tc.ctex"
 metadata={
 "imported_formats": ["s3tc_bptc"],
 "vram_texture": true
 }
 generator_parameters={
-"md5": "dd0b0b75bfbb629ae280416a490baf71"
+"md5": "b8ec1ecdb142e355991115beee47367a"
 }
 
 [deps]
 
-source_file="res://assets/textures/lantern_lantern_metal_256.png"
-dest_files=["res://.godot/imported/lantern_lantern_metal_256.png-a752bd9db65d44e5f3fd6d729f7d6107.s3tc.ctex"]
+source_file="res://assets/models/lift_grid.png"
+dest_files=["res://.godot/imported/lift_grid.png-133bd6b8671a4890d75b34e1c41409f4.s3tc.ctex"]
 
 [params]
 

@@ -1,0 +1,9 @@
+[gd_scene format=3 uid="uid://dr5vxigwomjg6"]
+
+[ext_resource type="PackedScene" uid="uid://bqhhsc7f3swd6" path="res://assets/models/boxes.glb" id="1_05tfo"]
+
+[node name="2boxes" type="Node3D" unique_id=1007875241]
+
+[node name="boxes" parent="." unique_id=198232488 instance=ExtResource("1_05tfo")]
+
+[editable path="boxes"]

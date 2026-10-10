@@ -1,0 +1,9 @@
+[gd_scene format=3 uid="uid://dqoeongwjhncm"]
+
+[ext_resource type="PackedScene" uid="uid://dusjmenqwk7pq" path="res://assets/models/shovel.glb" id="1_d01uh"]
+
+[node name="shovel" type="Node3D" unique_id=1446839557]
+
+[node name="shovel" parent="." unique_id=551336409 instance=ExtResource("1_d01uh")]
+
+[editable path="shovel"]

@@ -28,24 +28,24 @@ billboard_mode = 1
 [node name="lantern" unique_id=1539904532 instance=ExtResource("1_uxgnm")]
 script = ExtResource("2_y6stn")
 
-[node name="tank" parent="." index="0" unique_id=1611197768]
+[node name="tank" parent="." index="0" unique_id=23504663]
 cast_shadow = 0
 surface_material_override/0 = ExtResource("2_jdg25")
 
-[node name="glass" parent="tank" index="0" unique_id=198250804]
+[node name="glass" parent="tank" index="0" unique_id=530106406]
 cast_shadow = 0
 surface_material_override/0 = SubResource("StandardMaterial3D_y6stn")
 
-[node name="FlameSprite" type="MeshInstance3D" parent="tank/glass/Flame" parent_id_path=PackedInt32Array(280210792) index="0" unique_id=350165982]
+[node name="FlameSprite" type="MeshInstance3D" parent="tank/glass/Flame" parent_id_path=PackedInt32Array(734341920) index="0" unique_id=350165982]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.08258756, 0)
 cast_shadow = 0
 mesh = SubResource("QuadMesh_y6stn")
 surface_material_override/0 = SubResource("StandardMaterial3D_4a08e")
 
-[node name="guard" parent="tank" index="1" unique_id=1719681578]
+[node name="guard" parent="tank" index="1" unique_id=1743966453]
 cast_shadow = 0
 surface_material_override/0 = ExtResource("2_jdg25")
 
-[node name="handle" parent="tank/guard" index="0" unique_id=1824583197]
+[node name="handle" parent="tank/guard" index="0" unique_id=1646135347]
 cast_shadow = 0
 surface_material_override/0 = ExtResource("2_jdg25")

@@ -1,0 +1,9 @@
+[gd_scene format=3 uid="uid://crw2y10togf34"]
+
+[ext_resource type="PackedScene" uid="uid://cd015nqirdy6i" path="res://assets/models/locker.glb" id="1_46kxn"]
+
+[node name="locker" type="Node3D" unique_id=1323839761]
+
+[node name="locker" parent="." unique_id=889395958 instance=ExtResource("1_46kxn")]
+
+[editable path="locker"]

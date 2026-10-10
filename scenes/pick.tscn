@@ -1,0 +1,9 @@
+[gd_scene format=3 uid="uid://d37x2hwgat2uu"]
+
+[ext_resource type="PackedScene" uid="uid://eis4pocr76xs" path="res://assets/models/pick.glb" id="1_nuqpk"]
+
+[node name="pick" type="Node3D" unique_id=926507453]
+
+[node name="pick" parent="." unique_id=643603276 instance=ExtResource("1_nuqpk")]
+
+[editable path="pick"]

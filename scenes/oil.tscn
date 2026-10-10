@@ -1,0 +1,9 @@
+[gd_scene format=3 uid="uid://d24woqppsw2ox"]
+
+[ext_resource type="PackedScene" uid="uid://d2u2drl8e8xnf" path="res://assets/models/oil.glb" id="1_vdcy5"]
+
+[node name="oil" type="Node3D" unique_id=2123225408]
+
+[node name="oil" parent="." unique_id=1838363169 instance=ExtResource("1_vdcy5")]
+
+[editable path="oil"]

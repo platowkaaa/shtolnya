@@ -1,0 +1,9 @@
+[gd_scene format=3 uid="uid://dk20xlxn3jiqy"]
+
+[ext_resource type="PackedScene" uid="uid://bw64sja13ndvs" path="res://assets/models/fence_door.glb" id="1_sthb5"]
+
+[node name="fence_door" type="Node3D" unique_id=2132814949]
+
+[node name="fence_door" parent="." unique_id=635900416 instance=ExtResource("1_sthb5")]
+
+[editable path="fence_door"]
